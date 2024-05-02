@@ -29,40 +29,40 @@
         private void InitializeComponent()
         {
             groupBox3 = new GroupBox();
-            textBox9 = new TextBox();
+            Txb_QuantTotProd = new TextBox();
             label13 = new Label();
-            textBox7 = new TextBox();
+            Txb_Vencidos = new TextBox();
             label7 = new Label();
-            textBox6 = new TextBox();
+            Txb_Vencimento3Dias = new TextBox();
             label6 = new Label();
-            textBox5 = new TextBox();
+            Txb_Vencimento10Dias = new TextBox();
             label5 = new Label();
-            textBox4 = new TextBox();
+            Txb_Vencimento15Dias = new TextBox();
             label4 = new Label();
-            textBox3 = new TextBox();
+            Txb_Vencimento20Dias = new TextBox();
             label3 = new Label();
-            textBox2 = new TextBox();
+            Txb_Vencimento30Dias = new TextBox();
             label2 = new Label();
-            textBox1 = new TextBox();
+            Txb_QuantTot = new TextBox();
             label1 = new Label();
             groupBox2 = new GroupBox();
-            dataGridView1 = new DataGridView();
+            Dgv_FiltroProdutos = new DataGridView();
             groupBox1 = new GroupBox();
             button1 = new Button();
             label12 = new Label();
-            comboBox2 = new ComboBox();
+            Cb_Vencimentos = new ComboBox();
             groupBox4 = new GroupBox();
             dateTimePicker2 = new DateTimePicker();
             label11 = new Label();
             dateTimePicker1 = new DateTimePicker();
             label10 = new Label();
-            comboBox1 = new ComboBox();
-            textBox8 = new TextBox();
+            Cb_Fornecedor = new ComboBox();
+            Txb_Descricao = new TextBox();
             label9 = new Label();
             label8 = new Label();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Dgv_FiltroProdutos).BeginInit();
             groupBox1.SuspendLayout();
             groupBox4.SuspendLayout();
             SuspendLayout();
@@ -71,21 +71,21 @@
             // 
             groupBox3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             groupBox3.AutoSize = true;
-            groupBox3.Controls.Add(textBox9);
+            groupBox3.Controls.Add(Txb_QuantTotProd);
             groupBox3.Controls.Add(label13);
-            groupBox3.Controls.Add(textBox7);
+            groupBox3.Controls.Add(Txb_Vencidos);
             groupBox3.Controls.Add(label7);
-            groupBox3.Controls.Add(textBox6);
+            groupBox3.Controls.Add(Txb_Vencimento3Dias);
             groupBox3.Controls.Add(label6);
-            groupBox3.Controls.Add(textBox5);
+            groupBox3.Controls.Add(Txb_Vencimento10Dias);
             groupBox3.Controls.Add(label5);
-            groupBox3.Controls.Add(textBox4);
+            groupBox3.Controls.Add(Txb_Vencimento15Dias);
             groupBox3.Controls.Add(label4);
-            groupBox3.Controls.Add(textBox3);
+            groupBox3.Controls.Add(Txb_Vencimento20Dias);
             groupBox3.Controls.Add(label3);
-            groupBox3.Controls.Add(textBox2);
+            groupBox3.Controls.Add(Txb_Vencimento30Dias);
             groupBox3.Controls.Add(label2);
-            groupBox3.Controls.Add(textBox1);
+            groupBox3.Controls.Add(Txb_QuantTot);
             groupBox3.Controls.Add(label1);
             groupBox3.Location = new Point(12, 592);
             groupBox3.Name = "groupBox3";
@@ -94,12 +94,12 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Informações";
             // 
-            // textBox9
+            // Txb_QuantTotProd
             // 
-            textBox9.Location = new Point(99, 52);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(119, 23);
-            textBox9.TabIndex = 15;
+            Txb_QuantTotProd.Location = new Point(99, 52);
+            Txb_QuantTotProd.Name = "Txb_QuantTotProd";
+            Txb_QuantTotProd.Size = new Size(119, 23);
+            Txb_QuantTotProd.TabIndex = 15;
             // 
             // label13
             // 
@@ -110,12 +110,12 @@
             label13.TabIndex = 14;
             label13.Text = "Quant Total Produtos";
             // 
-            // textBox7
+            // Txb_Vencidos
             // 
-            textBox7.Location = new Point(964, 52);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(91, 23);
-            textBox7.TabIndex = 13;
+            Txb_Vencidos.Location = new Point(964, 52);
+            Txb_Vencidos.Name = "Txb_Vencidos";
+            Txb_Vencidos.Size = new Size(91, 23);
+            Txb_Vencidos.TabIndex = 13;
             // 
             // label7
             // 
@@ -126,12 +126,12 @@
             label7.TabIndex = 12;
             label7.Text = "Vencidos";
             // 
-            // textBox6
+            // Txb_Vencimento3Dias
             // 
-            textBox6.Location = new Point(830, 52);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(88, 23);
-            textBox6.TabIndex = 11;
+            Txb_Vencimento3Dias.Location = new Point(830, 52);
+            Txb_Vencimento3Dias.Name = "Txb_Vencimento3Dias";
+            Txb_Vencimento3Dias.Size = new Size(88, 23);
+            Txb_Vencimento3Dias.TabIndex = 11;
             // 
             // label6
             // 
@@ -142,12 +142,12 @@
             label6.TabIndex = 10;
             label6.Text = "Venc. até 3 Dias";
             // 
-            // textBox5
+            // Txb_Vencimento10Dias
             // 
-            textBox5.Location = new Point(697, 52);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(94, 23);
-            textBox5.TabIndex = 9;
+            Txb_Vencimento10Dias.Location = new Point(697, 52);
+            Txb_Vencimento10Dias.Name = "Txb_Vencimento10Dias";
+            Txb_Vencimento10Dias.Size = new Size(94, 23);
+            Txb_Vencimento10Dias.TabIndex = 9;
             // 
             // label5
             // 
@@ -158,12 +158,12 @@
             label5.TabIndex = 8;
             label5.Text = "Venc. até 10 Dias";
             // 
-            // textBox4
+            // Txb_Vencimento15Dias
             // 
-            textBox4.Location = new Point(562, 52);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(94, 23);
-            textBox4.TabIndex = 7;
+            Txb_Vencimento15Dias.Location = new Point(562, 52);
+            Txb_Vencimento15Dias.Name = "Txb_Vencimento15Dias";
+            Txb_Vencimento15Dias.Size = new Size(94, 23);
+            Txb_Vencimento15Dias.TabIndex = 7;
             // 
             // label4
             // 
@@ -174,12 +174,12 @@
             label4.TabIndex = 6;
             label4.Text = "Venc. até 15 Dias";
             // 
-            // textBox3
+            // Txb_Vencimento20Dias
             // 
-            textBox3.Location = new Point(418, 52);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(94, 23);
-            textBox3.TabIndex = 5;
+            Txb_Vencimento20Dias.Location = new Point(418, 52);
+            Txb_Vencimento20Dias.Name = "Txb_Vencimento20Dias";
+            Txb_Vencimento20Dias.Size = new Size(94, 23);
+            Txb_Vencimento20Dias.TabIndex = 5;
             // 
             // label3
             // 
@@ -190,12 +190,12 @@
             label3.TabIndex = 4;
             label3.Text = "Venc. até 20 Dias";
             // 
-            // textBox2
+            // Txb_Vencimento30Dias
             // 
-            textBox2.Location = new Point(276, 52);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(94, 23);
-            textBox2.TabIndex = 3;
+            Txb_Vencimento30Dias.Location = new Point(276, 52);
+            Txb_Vencimento30Dias.Name = "Txb_Vencimento30Dias";
+            Txb_Vencimento30Dias.Size = new Size(94, 23);
+            Txb_Vencimento30Dias.TabIndex = 3;
             // 
             // label2
             // 
@@ -206,12 +206,12 @@
             label2.TabIndex = 2;
             label2.Text = "Venc. até 30 Dias";
             // 
-            // textBox1
+            // Txb_QuantTot
             // 
-            textBox1.Location = new Point(15, 52);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(68, 23);
-            textBox1.TabIndex = 1;
+            Txb_QuantTot.Location = new Point(15, 52);
+            Txb_QuantTot.Name = "Txb_QuantTot";
+            Txb_QuantTot.Size = new Size(68, 23);
+            Txb_QuantTot.TabIndex = 1;
             // 
             // label1
             // 
@@ -225,7 +225,7 @@
             // groupBox2
             // 
             groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox2.Controls.Add(dataGridView1);
+            groupBox2.Controls.Add(Dgv_FiltroProdutos);
             groupBox2.Location = new Point(12, 129);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(1098, 449);
@@ -233,27 +233,27 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Dados";
             // 
-            // dataGridView1
+            // Dgv_FiltroProdutos
             // 
-            dataGridView1.AllowUserToAddRows = false;
-            dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(3, 19);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.ReadOnly = true;
-            dataGridView1.Size = new Size(1092, 427);
-            dataGridView1.TabIndex = 0;
+            Dgv_FiltroProdutos.AllowUserToAddRows = false;
+            Dgv_FiltroProdutos.AllowUserToDeleteRows = false;
+            Dgv_FiltroProdutos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Dgv_FiltroProdutos.Dock = DockStyle.Fill;
+            Dgv_FiltroProdutos.Location = new Point(3, 19);
+            Dgv_FiltroProdutos.Name = "Dgv_FiltroProdutos";
+            Dgv_FiltroProdutos.ReadOnly = true;
+            Dgv_FiltroProdutos.Size = new Size(1092, 427);
+            Dgv_FiltroProdutos.TabIndex = 0;
             // 
             // groupBox1
             // 
             groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(label12);
-            groupBox1.Controls.Add(comboBox2);
+            groupBox1.Controls.Add(Cb_Vencimentos);
             groupBox1.Controls.Add(groupBox4);
-            groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(textBox8);
+            groupBox1.Controls.Add(Cb_Fornecedor);
+            groupBox1.Controls.Add(Txb_Descricao);
             groupBox1.Controls.Add(label9);
             groupBox1.Controls.Add(label8);
             groupBox1.Location = new Point(12, 12);
@@ -282,14 +282,14 @@
             label12.TabIndex = 9;
             label12.Text = "Filtro Vencimentos";
             // 
-            // comboBox2
+            // Cb_Vencimentos
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Vencimento em até 30 Dias", "Vencimento em até 20 Dias", "Vencimento em até 15 Dias", "Vencimento em até 10 Dias", "Vencimento em até 7 Dias", "Vencimento em até 3 Dias", "Vencidos", "Todos" });
-            comboBox2.Location = new Point(418, 48);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(184, 23);
-            comboBox2.TabIndex = 8;
+            Cb_Vencimentos.FormattingEnabled = true;
+            Cb_Vencimentos.Items.AddRange(new object[] { "Vencimento em até 30 Dias", "Vencimento em até 20 Dias", "Vencimento em até 15 Dias", "Vencimento em até 10 Dias", "Vencimento em até 7 Dias", "Vencimento em até 3 Dias", "Vencidos", "Todos" });
+            Cb_Vencimentos.Location = new Point(418, 48);
+            Cb_Vencimentos.Name = "Cb_Vencimentos";
+            Cb_Vencimentos.Size = new Size(184, 23);
+            Cb_Vencimentos.TabIndex = 8;
             // 
             // groupBox4
             // 
@@ -338,20 +338,22 @@
             label10.TabIndex = 7;
             label10.Text = "De";
             // 
-            // comboBox1
+            // Cb_Fornecedor
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(211, 48);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(201, 23);
-            comboBox1.TabIndex = 2;
+            Cb_Fornecedor.FormattingEnabled = true;
+            Cb_Fornecedor.Items.AddRange(new object[] { "  " });
+            Cb_Fornecedor.Location = new Point(211, 48);
+            Cb_Fornecedor.Name = "Cb_Fornecedor";
+            Cb_Fornecedor.Size = new Size(201, 23);
+            Cb_Fornecedor.TabIndex = 2;
             // 
-            // textBox8
+            // Txb_Descricao
             // 
-            textBox8.Location = new Point(15, 48);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(190, 23);
-            textBox8.TabIndex = 1;
+            Txb_Descricao.Location = new Point(15, 48);
+            Txb_Descricao.Name = "Txb_Descricao";
+            Txb_Descricao.Size = new Size(190, 23);
+            Txb_Descricao.TabIndex = 1;
+            Txb_Descricao.TextChanged += Txb_Descricao_TextChanged;
             // 
             // label9
             // 
@@ -383,7 +385,7 @@
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
             groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Dgv_FiltroProdutos).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox4.ResumeLayout(false);
@@ -395,36 +397,36 @@
         #endregion
 
         private GroupBox groupBox3;
-        private TextBox textBox7;
+        private TextBox Txb_Vencidos;
         private Label label7;
-        private TextBox textBox6;
+        private TextBox Txb_Vencimento3Dias;
         private Label label6;
-        private TextBox textBox5;
+        private TextBox Txb_Vencimento10Dias;
         private Label label5;
-        private TextBox textBox4;
+        private TextBox Txb_Vencimento15Dias;
         private Label label4;
-        private TextBox textBox3;
+        private TextBox Txb_Vencimento20Dias;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox Txb_Vencimento30Dias;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox Txb_QuantTot;
         private Label label1;
         private GroupBox groupBox2;
-        private DataGridView dataGridView1;
+        private DataGridView Dgv_FiltroProdutos;
         private GroupBox groupBox1;
         private GroupBox groupBox4;
         private DateTimePicker dateTimePicker2;
         private Label label11;
         private DateTimePicker dateTimePicker1;
         private Label label10;
-        private ComboBox comboBox1;
-        private TextBox textBox8;
+        private ComboBox Cb_Fornecedor;
+        private TextBox Txb_Descricao;
         private Label label9;
         private Label label8;
-        private TextBox textBox9;
+        private TextBox Txb_QuantTotProd;
         private Label label13;
         private Button button1;
         private Label label12;
-        private ComboBox comboBox2;
+        private ComboBox Cb_Vencimentos;
     }
 }

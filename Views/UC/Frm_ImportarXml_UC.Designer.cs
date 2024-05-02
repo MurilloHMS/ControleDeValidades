@@ -29,44 +29,10 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            textBox18 = new TextBox();
-            textBox17 = new TextBox();
-            textBox16 = new TextBox();
-            textBox15 = new TextBox();
-            textBox14 = new TextBox();
-            textBox13 = new TextBox();
-            textBox12 = new TextBox();
-            textBox11 = new TextBox();
-            textBox10 = new TextBox();
-            textBox9 = new TextBox();
-            textBox8 = new TextBox();
-            textBox7 = new TextBox();
-            textBox6 = new TextBox();
-            label20 = new Label();
-            label19 = new Label();
-            label18 = new Label();
-            label17 = new Label();
-            label16 = new Label();
-            label15 = new Label();
-            label14 = new Label();
-            label13 = new Label();
-            label12 = new Label();
-            label11 = new Label();
-            label10 = new Label();
-            label9 = new Label();
-            label8 = new Label();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            label7 = new Label();
             dateTimePicker2 = new DateTimePicker();
             dateTimePicker1 = new DateTimePicker();
-            textBox2 = new TextBox();
-            label6 = new Label();
-            label5 = new Label();
             label4 = new Label();
             label3 = new Label();
-            label2 = new Label();
             button1 = new Button();
             Txb_ChaveNFe = new TextBox();
             label1 = new Label();
@@ -75,6 +41,40 @@
             Dgv_Check = new DataGridViewCheckBoxColumn();
             button2 = new Button();
             button3 = new Button();
+            label2 = new Label();
+            Txb_RzSocial = new TextBox();
+            label7 = new Label();
+            textBox3 = new TextBox();
+            label5 = new Label();
+            label6 = new Label();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            label17 = new Label();
+            label18 = new Label();
+            label19 = new Label();
+            label20 = new Label();
+            textBox6 = new TextBox();
+            textBox7 = new TextBox();
+            textBox8 = new TextBox();
+            textBox9 = new TextBox();
+            textBox10 = new TextBox();
+            textBox11 = new TextBox();
+            textBox12 = new TextBox();
+            textBox13 = new TextBox();
+            textBox14 = new TextBox();
+            textBox15 = new TextBox();
+            textBox16 = new TextBox();
+            textBox17 = new TextBox();
+            textBox18 = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Dgv_DadosXML).BeginInit();
@@ -115,7 +115,7 @@
             groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(dateTimePicker2);
             groupBox1.Controls.Add(dateTimePicker1);
-            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(Txb_RzSocial);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
@@ -130,244 +130,6 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Dados NFe";
-            // 
-            // textBox18
-            // 
-            textBox18.Location = new Point(855, 222);
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(87, 23);
-            textBox18.TabIndex = 17;
-            // 
-            // textBox17
-            // 
-            textBox17.Location = new Point(617, 222);
-            textBox17.Name = "textBox17";
-            textBox17.Size = new Size(87, 23);
-            textBox17.TabIndex = 17;
-            // 
-            // textBox16
-            // 
-            textBox16.Location = new Point(487, 222);
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(87, 23);
-            textBox16.TabIndex = 17;
-            // 
-            // textBox15
-            // 
-            textBox15.Location = new Point(365, 222);
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(98, 23);
-            textBox15.TabIndex = 17;
-            // 
-            // textBox14
-            // 
-            textBox14.Location = new Point(251, 222);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(87, 23);
-            textBox14.TabIndex = 17;
-            // 
-            // textBox13
-            // 
-            textBox13.Location = new Point(143, 222);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(87, 23);
-            textBox13.TabIndex = 17;
-            // 
-            // textBox12
-            // 
-            textBox12.Location = new Point(855, 167);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(87, 23);
-            textBox12.TabIndex = 17;
-            // 
-            // textBox11
-            // 
-            textBox11.Location = new Point(734, 167);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(87, 23);
-            textBox11.TabIndex = 17;
-            // 
-            // textBox10
-            // 
-            textBox10.Location = new Point(617, 167);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(87, 23);
-            textBox10.TabIndex = 17;
-            // 
-            // textBox9
-            // 
-            textBox9.Location = new Point(487, 167);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(87, 23);
-            textBox9.TabIndex = 17;
-            // 
-            // textBox8
-            // 
-            textBox8.Location = new Point(348, 167);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(98, 23);
-            textBox8.TabIndex = 17;
-            // 
-            // textBox7
-            // 
-            textBox7.Location = new Point(221, 167);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(87, 23);
-            textBox7.TabIndex = 17;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(85, 167);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(87, 23);
-            textBox6.TabIndex = 17;
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Location = new Point(855, 204);
-            label20.Name = "label20";
-            label20.Size = new Size(79, 15);
-            label20.TabIndex = 16;
-            label20.Text = "Valor Total NF";
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Location = new Point(617, 204);
-            label19.Name = "label19";
-            label19.Size = new Size(86, 15);
-            label19.TabIndex = 16;
-            label19.Text = "Valor Desconto";
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Location = new Point(487, 204);
-            label18.Name = "label18";
-            label18.Size = new Size(49, 15);
-            label18.TabIndex = 16;
-            label18.Text = "Valor IPI";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Location = new Point(365, 204);
-            label17.Name = "label17";
-            label17.Size = new Size(91, 15);
-            label17.TabIndex = 16;
-            label17.Text = "Desp Acessorias";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Location = new Point(252, 204);
-            label16.Name = "label16";
-            label16.Size = new Size(86, 15);
-            label16.TabIndex = 16;
-            label16.Text = "Valor Desconto";
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(143, 204);
-            label15.Name = "label15";
-            label15.Size = new Size(62, 15);
-            label15.TabIndex = 16;
-            label15.Text = "Valor Frete";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(858, 149);
-            label14.Name = "label14";
-            label14.Size = new Size(84, 15);
-            label14.TabIndex = 16;
-            label14.Text = "Valor Produtos";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(734, 149);
-            label13.Name = "label13";
-            label13.Size = new Size(62, 15);
-            label13.TabIndex = 16;
-            label13.Text = "ST Externo";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(619, 149);
-            label12.Name = "label12";
-            label12.Size = new Size(48, 15);
-            label12.TabIndex = 16;
-            label12.Text = "Valor ST";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(487, 149);
-            label11.Name = "label11";
-            label11.Size = new Size(46, 15);
-            label11.TabIndex = 16;
-            label11.Text = "Base ST";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(350, 149);
-            label10.Name = "label10";
-            label10.Size = new Size(96, 15);
-            label10.TabIndex = 16;
-            label10.Text = "Valor ICMS Deso.";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(221, 149);
-            label9.Name = "label9";
-            label9.Size = new Size(64, 15);
-            label9.TabIndex = 16;
-            label9.Text = "Valor ICMS";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(85, 149);
-            label8.Name = "label8";
-            label8.Size = new Size(62, 15);
-            label8.TabIndex = 15;
-            label8.Text = "Base ICMS";
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(993, 110);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(67, 23);
-            textBox5.TabIndex = 14;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(885, 110);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(82, 23);
-            textBox4.TabIndex = 13;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(439, 110);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(180, 23);
-            textBox3.TabIndex = 12;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(439, 92);
-            label7.Name = "label7";
-            label7.Size = new Size(34, 15);
-            label7.TabIndex = 11;
-            label7.Text = "CNPJ";
             // 
             // dateTimePicker2
             // 
@@ -384,31 +146,6 @@
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(106, 23);
             dateTimePicker1.TabIndex = 9;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(42, 110);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(368, 23);
-            textBox2.TabIndex = 8;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(993, 92);
-            label6.Name = "label6";
-            label6.Size = new Size(32, 15);
-            label6.TabIndex = 7;
-            label6.Text = "Serie";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(885, 92);
-            label5.Name = "label5";
-            label5.Size = new Size(65, 15);
-            label5.TabIndex = 6;
-            label5.Text = "Nota Fiscal";
             // 
             // label4
             // 
@@ -427,15 +164,6 @@
             label3.Size = new Size(77, 15);
             label3.TabIndex = 4;
             label3.Text = "Data Emissão";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(42, 92);
-            label2.Name = "label2";
-            label2.Size = new Size(72, 15);
-            label2.TabIndex = 3;
-            label2.Text = "Razão Social";
             // 
             // button1
             // 
@@ -502,6 +230,7 @@
             button2.TabIndex = 2;
             button2.Text = "Importar Produtos Selecionados";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -511,6 +240,278 @@
             button3.TabIndex = 2;
             button3.Text = "Importar Todos Os Produtos";
             button3.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(42, 92);
+            label2.Name = "label2";
+            label2.Size = new Size(72, 15);
+            label2.TabIndex = 3;
+            label2.Text = "Razão Social";
+            // 
+            // Txb_RzSocial
+            // 
+            Txb_RzSocial.Location = new Point(42, 110);
+            Txb_RzSocial.Name = "Txb_RzSocial";
+            Txb_RzSocial.Size = new Size(368, 23);
+            Txb_RzSocial.TabIndex = 8;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(439, 92);
+            label7.Name = "label7";
+            label7.Size = new Size(34, 15);
+            label7.TabIndex = 11;
+            label7.Text = "CNPJ";
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(439, 110);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(180, 23);
+            textBox3.TabIndex = 12;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(885, 92);
+            label5.Name = "label5";
+            label5.Size = new Size(65, 15);
+            label5.TabIndex = 6;
+            label5.Text = "Nota Fiscal";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(993, 92);
+            label6.Name = "label6";
+            label6.Size = new Size(32, 15);
+            label6.TabIndex = 7;
+            label6.Text = "Serie";
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(885, 110);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(82, 23);
+            textBox4.TabIndex = 13;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(993, 110);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(67, 23);
+            textBox5.TabIndex = 14;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(85, 149);
+            label8.Name = "label8";
+            label8.Size = new Size(62, 15);
+            label8.TabIndex = 15;
+            label8.Text = "Base ICMS";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(221, 149);
+            label9.Name = "label9";
+            label9.Size = new Size(64, 15);
+            label9.TabIndex = 16;
+            label9.Text = "Valor ICMS";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(350, 149);
+            label10.Name = "label10";
+            label10.Size = new Size(96, 15);
+            label10.TabIndex = 16;
+            label10.Text = "Valor ICMS Deso.";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(487, 149);
+            label11.Name = "label11";
+            label11.Size = new Size(46, 15);
+            label11.TabIndex = 16;
+            label11.Text = "Base ST";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(619, 149);
+            label12.Name = "label12";
+            label12.Size = new Size(48, 15);
+            label12.TabIndex = 16;
+            label12.Text = "Valor ST";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(734, 149);
+            label13.Name = "label13";
+            label13.Size = new Size(62, 15);
+            label13.TabIndex = 16;
+            label13.Text = "ST Externo";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(858, 149);
+            label14.Name = "label14";
+            label14.Size = new Size(84, 15);
+            label14.TabIndex = 16;
+            label14.Text = "Valor Produtos";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(143, 204);
+            label15.Name = "label15";
+            label15.Size = new Size(62, 15);
+            label15.TabIndex = 16;
+            label15.Text = "Valor Frete";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(252, 204);
+            label16.Name = "label16";
+            label16.Size = new Size(86, 15);
+            label16.TabIndex = 16;
+            label16.Text = "Valor Desconto";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(365, 204);
+            label17.Name = "label17";
+            label17.Size = new Size(91, 15);
+            label17.TabIndex = 16;
+            label17.Text = "Desp Acessorias";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(487, 204);
+            label18.Name = "label18";
+            label18.Size = new Size(49, 15);
+            label18.TabIndex = 16;
+            label18.Text = "Valor IPI";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(617, 204);
+            label19.Name = "label19";
+            label19.Size = new Size(86, 15);
+            label19.TabIndex = 16;
+            label19.Text = "Valor Desconto";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(855, 204);
+            label20.Name = "label20";
+            label20.Size = new Size(79, 15);
+            label20.TabIndex = 16;
+            label20.Text = "Valor Total NF";
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(85, 167);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(87, 23);
+            textBox6.TabIndex = 17;
+            // 
+            // textBox7
+            // 
+            textBox7.Location = new Point(221, 167);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(87, 23);
+            textBox7.TabIndex = 17;
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(348, 167);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(98, 23);
+            textBox8.TabIndex = 17;
+            // 
+            // textBox9
+            // 
+            textBox9.Location = new Point(487, 167);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new Size(87, 23);
+            textBox9.TabIndex = 17;
+            // 
+            // textBox10
+            // 
+            textBox10.Location = new Point(617, 167);
+            textBox10.Name = "textBox10";
+            textBox10.Size = new Size(87, 23);
+            textBox10.TabIndex = 17;
+            // 
+            // textBox11
+            // 
+            textBox11.Location = new Point(734, 167);
+            textBox11.Name = "textBox11";
+            textBox11.Size = new Size(87, 23);
+            textBox11.TabIndex = 17;
+            // 
+            // textBox12
+            // 
+            textBox12.Location = new Point(855, 167);
+            textBox12.Name = "textBox12";
+            textBox12.Size = new Size(87, 23);
+            textBox12.TabIndex = 17;
+            // 
+            // textBox13
+            // 
+            textBox13.Location = new Point(143, 222);
+            textBox13.Name = "textBox13";
+            textBox13.Size = new Size(87, 23);
+            textBox13.TabIndex = 17;
+            // 
+            // textBox14
+            // 
+            textBox14.Location = new Point(251, 222);
+            textBox14.Name = "textBox14";
+            textBox14.Size = new Size(87, 23);
+            textBox14.TabIndex = 17;
+            // 
+            // textBox15
+            // 
+            textBox15.Location = new Point(365, 222);
+            textBox15.Name = "textBox15";
+            textBox15.Size = new Size(98, 23);
+            textBox15.TabIndex = 17;
+            // 
+            // textBox16
+            // 
+            textBox16.Location = new Point(487, 222);
+            textBox16.Name = "textBox16";
+            textBox16.Size = new Size(87, 23);
+            textBox16.TabIndex = 17;
+            // 
+            // textBox17
+            // 
+            textBox17.Location = new Point(617, 222);
+            textBox17.Name = "textBox17";
+            textBox17.Size = new Size(87, 23);
+            textBox17.TabIndex = 17;
+            // 
+            // textBox18
+            // 
+            textBox18.Location = new Point(855, 222);
+            textBox18.Name = "textBox18";
+            textBox18.Size = new Size(87, 23);
+            textBox18.TabIndex = 17;
             // 
             // Frm_ImportarXml_UC
             // 
@@ -536,22 +537,15 @@
         private Button button1;
         private TextBox Txb_ChaveNFe;
         private Label label1;
-        private Label label11;
-        private Label label10;
-        private Label label9;
-        private Label label8;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private Label label7;
         private DateTimePicker dateTimePicker2;
         private DateTimePicker dateTimePicker1;
-        private TextBox textBox2;
-        private Label label6;
-        private Label label5;
         private Label label4;
         private Label label3;
-        private Label label2;
+        private GroupBox groupBox2;
+        private DataGridView Dgv_DadosXML;
+        private Button button2;
+        private Button button3;
+        private DataGridViewCheckBoxColumn Dgv_Check;
         private TextBox textBox18;
         private TextBox textBox17;
         private TextBox textBox16;
@@ -574,10 +568,17 @@
         private Label label14;
         private Label label13;
         private Label label12;
-        private GroupBox groupBox2;
-        private DataGridView Dgv_DadosXML;
-        private Button button2;
-        private Button button3;
-        private DataGridViewCheckBoxColumn Dgv_Check;
+        private Label label11;
+        private Label label10;
+        private Label label9;
+        private Label label8;
+        private TextBox textBox5;
+        private TextBox textBox4;
+        private TextBox textBox3;
+        private Label label7;
+        private TextBox Txb_RzSocial;
+        private Label label6;
+        private Label label5;
+        private Label label2;
     }
 }

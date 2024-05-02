@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "A:\\projects\\primulla\\ControleDeValidades\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|a:\\projects\\primulla\\controledevalidades\\views\\uc\\frm_importarxml_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_importarxml_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|a:\\projects\\primulla\\controledevalidades\\views\\uc\\frm_filtroprodutos_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_filtroprodutos_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|A:\\projects\\primulla\\ControleDeValidades\\views\\uc\\frm_importarxml_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_importarxml_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|A:\\projects\\primulla\\ControleDeValidades\\views\\uc\\frm_filtroprodutos_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_filtroprodutos_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|A:\\projects\\primulla\\ControleDeValidades\\models\\entidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:models\\entidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|A:\\projects\\primulla\\ControleDeValidades\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,27 +34,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Frm_ImportarXml_UC.cs",
-              "DocumentMoniker": "A:\\projects\\primulla\\ControleDeValidades\\Views\\UC\\Frm_ImportarXml_UC.cs",
-              "RelativeDocumentMoniker": "Views\\UC\\Frm_ImportarXml_UC.cs",
-              "ToolTip": "A:\\projects\\primulla\\ControleDeValidades\\Views\\UC\\Frm_ImportarXml_UC.cs",
-              "RelativeToolTip": "Views\\UC\\Frm_ImportarXml_UC.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACkAAABjAAAA",
+              "DocumentIndex": 1,
+              "Title": "Frm_FiltroProdutos_UC.cs [Design]",
+              "DocumentMoniker": "A:\\projects\\primulla\\ControleDeValidades\\Views\\UC\\Frm_FiltroProdutos_UC.cs",
+              "RelativeDocumentMoniker": "Views\\UC\\Frm_FiltroProdutos_UC.cs",
+              "ToolTip": "A:\\projects\\primulla\\ControleDeValidades\\Views\\UC\\Frm_FiltroProdutos_UC.cs [Design]",
+              "RelativeToolTip": "Views\\UC\\Frm_FiltroProdutos_UC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T18:38:01.658Z",
+              "WhenOpened": "2024-05-02T15:45:27.416Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Frm_FiltroProdutos_UC.cs",
+              "DocumentMoniker": "A:\\projects\\primulla\\ControleDeValidades\\Views\\UC\\Frm_FiltroProdutos_UC.cs",
+              "RelativeDocumentMoniker": "Views\\UC\\Frm_FiltroProdutos_UC.cs",
+              "ToolTip": "A:\\projects\\primulla\\ControleDeValidades\\Views\\UC\\Frm_FiltroProdutos_UC.cs",
+              "RelativeToolTip": "Views\\UC\\Frm_FiltroProdutos_UC.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAwwJ4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T14:05:39.92Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Frm_ImportarXml_UC.cs [Projeto]",
-              "DocumentMoniker": "A:\\projects\\primulla\\ControleDeValidades\\Views\\UC\\Frm_ImportarXml_UC.cs",
-              "RelativeDocumentMoniker": "Views\\UC\\Frm_ImportarXml_UC.cs",
-              "ToolTip": "A:\\projects\\primulla\\ControleDeValidades\\Views\\UC\\Frm_ImportarXml_UC.cs [Projeto]",
-              "RelativeToolTip": "Views\\UC\\Frm_ImportarXml_UC.cs [Projeto]",
+              "DocumentIndex": 3,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "A:\\projects\\primulla\\ControleDeValidades\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "Models\\Produto.cs",
+              "ToolTip": "A:\\projects\\primulla\\ControleDeValidades\\Models\\Produto.cs",
+              "RelativeToolTip": "Models\\Produto.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwBgAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T18:35:51.182Z"
+              "WhenOpened": "2024-05-02T12:54:03.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Entidades.cs",
+              "DocumentMoniker": "A:\\projects\\primulla\\ControleDeValidades\\Models\\Entidades.cs",
+              "RelativeDocumentMoniker": "Models\\Entidades.cs",
+              "ToolTip": "A:\\projects\\primulla\\ControleDeValidades\\Models\\Entidades.cs",
+              "RelativeToolTip": "Models\\Entidades.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T12:54:05.929Z"
             }
           ]
         }
