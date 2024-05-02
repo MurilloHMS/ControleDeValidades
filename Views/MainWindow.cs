@@ -10,49 +10,13 @@ namespace ControleDeValidades
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void filtrosProdutosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void importarXMLToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private ToolStripMenuItem CriaItemMenu(String text, string nomeDoIcone)
-        {
-            var vToolTip = new ToolStripMenuItem();
-            vToolTip.Text = text;
-            return vToolTip;
-
-        }
-
-        private void menuStrip1_MouseDown(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void Tb_MainWindow_MouseDown(object sender, MouseEventArgs e)
-        {
-            
-        }
-
-        private void produtoToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
+        }        
         private void importarXMLToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            
+            Frm_ImportarXml_UC importarXml_UC = new Frm_ImportarXml_UC();
+            Frm_DefaultWindows frm = new Frm_DefaultWindows(importarXml_UC, "ImportarXML", "Importação XML");
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void filtroProdutosToolStripMenuItem_Click(object sender, EventArgs e)

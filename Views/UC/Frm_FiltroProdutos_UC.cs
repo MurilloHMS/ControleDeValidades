@@ -16,5 +16,10 @@ namespace ControleDeValidades.Views.UC
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Atenção, não é possivel copiar a jemile julia\n\n Deseja tentar novamente sendo você mesma?", "Pirataria é Crime. Seja Original!!", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+        }
     }
 }

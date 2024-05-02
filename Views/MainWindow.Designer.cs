@@ -47,7 +47,6 @@
             menuStrip1.Size = new Size(1123, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
-            menuStrip1.MouseDown += menuStrip1_MouseDown;
             // 
             // opçõesToolStripMenuItem
             // 
@@ -67,7 +66,6 @@
             produtoToolStripMenuItem1.Name = "produtoToolStripMenuItem1";
             produtoToolStripMenuItem1.Size = new Size(147, 22);
             produtoToolStripMenuItem1.Text = "Produto";
-            produtoToolStripMenuItem1.Click += produtoToolStripMenuItem1_Click;
             // 
             // importarXMLToolStripMenuItem1
             // 
@@ -108,7 +106,6 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Controle De Validades";
             WindowState = FormWindowState.Maximized;
-            MouseDown += Form1_MouseDown;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
