@@ -78,3 +78,7 @@ A:\projects\primulla\ControleDeValidades\bin\Debug\net8.0-windows\runtimes\win\l
 A:\projects\primulla\ControleDeValidades\obj\Debug\net8.0-windows\ControleDeValidades.csproj.AssemblyReference.cache
 A:\projects\primulla\ControleDeValidades\obj\Debug\net8.0-windows\ControleDeValidades.csproj.Fody.CopyLocal.cache
 A:\projects\primulla\ControleDeValidades\obj\Debug\net8.0-windows\Controle.24879E5D.Up2Date
+A:\projects\primulla\ControleDeValidades\obj\Debug\net8.0-windows\ControleDeValidades.Views.CadastroProdutos.resources
+A:\projects\primulla\ControleDeValidades\obj\Debug\net8.0-windows\ControleDeValidades.Properties.Resources.resources
+A:\projects\primulla\ControleDeValidades\obj\Debug\net8.0-windows\ControleDeValidades.Views.Frm_Login.resources
+A:\projects\primulla\ControleDeValidades\obj\Debug\net8.0-windows\ControleDeValidades.Views.UC.Frm_CadastroUsuarios_UC.resources

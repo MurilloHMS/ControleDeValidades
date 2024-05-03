@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ControleDeValidades.Models;
+using Microsoft.EntityFrameworkCore.Internal;
 
 namespace ControleDeValidades.Databases
 {
@@ -9,6 +10,7 @@ namespace ControleDeValidades.Databases
         private string _connectionString = $@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ControleDeValidades;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
         public DbSet<Produto> produtos {  get; set; }
+        public DbSet<Usuarios> usuarios { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

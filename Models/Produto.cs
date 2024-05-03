@@ -6,46 +6,39 @@ using System.Text;
 
 namespace ControleDeValidades.Models
 {
-    public class Produto
+    public class Produto : Entidades
     {
         [Key]
-        public int PRONID_PRO { get; set; }
+        public int PRONID_PRO { get; set; } //ID Produto
+        //
         [Required(ErrorMessage = "É necessario preencher a data de validade")]
-        public DateTime PRODDATVAL { get; set; }
-        [Required(ErrorMessage = "É necessario preencher a referência do produto")]
-        public string PROCREF { get; set; }
+        public DateTime PRODDATCAD { get; set; } //Data Lançamento
+        //
+        public string PROCCODINT {  get; set; } // Codigo interno
+        //
         [Required(ErrorMessage = "É necessario preencher a descrição do produto")]
-        public string PROCDESCR { get; set; }
-        [Required(ErrorMessage = "É necessario preencher a quantidade do produto")]
-        public int PRONQUANT { get; set; }
+        public string PROCDESCR { get; set; } //Descrição do produto
+        //
+        [Required(ErrorMessage = "É necessario preencher a referência do produto")]
+        public string PROCREF { get; set; } //Referencia Fornecedor
+        //
         [Required(ErrorMessage = "É necessario preencher o fornecedor do produto")]
-        public string PROCFOR { get; set; }
-        public string? PROCSTAT { get; set; } 
-        
-        public DateTime PRODDATCAD { get; set; }
+        public string PROCFOR { get; set; } //Fornecedor 
+        //
+        [Required(ErrorMessage = "É necessario preencher a quantidade do produto")]
+        public int PRONQUANT { get; set; } //Quantidade
+        //
+        public DateTime PRODDATVAL { get; set; }//Data Validade
+        //
+        public string? PROCSTAT { get; set; } // Status
+        //
+        public string PROCNNUMNF { get; set; } //Número NFe
 
         public DateTime? PRODDATALT { get; set; }
 
         public string? PROCUSRCAD { get; set; }
 
         public string? PROCUSRALT { get; set; }
-
-        public void ValidaClasse()
-        {
-            ValidationContext contextoValidacao = new ValidationContext(this, serviceProvider: null, items: null);
-            List<ValidationResult> resultadoValidacao = new List<ValidationResult>();
-            bool valido = Validator.TryValidateObject(this, contextoValidacao, resultadoValidacao, true);
-
-            if (valido)
-            {
-                StringBuilder Errors = new StringBuilder();
-                foreach(var resultado in resultadoValidacao)
-                {
-                    Errors.AppendLine(resultado.ErrorMessage);
-                }
-                throw new ValidationException(Errors.ToString());
-            }
-        }
 
         public void Incluir()
         {

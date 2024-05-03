@@ -30,17 +30,20 @@
         {
             menuStrip1 = new MenuStrip();
             opçõesToolStripMenuItem = new ToolStripMenuItem();
+            loginSistemaToolStripMenuItem = new ToolStripMenuItem();
             cadastrosToolStripMenuItem = new ToolStripMenuItem();
             produtoToolStripMenuItem1 = new ToolStripMenuItem();
             importarXMLToolStripMenuItem1 = new ToolStripMenuItem();
             janelasToolStripMenuItem1 = new ToolStripMenuItem();
             filtroProdutosToolStripMenuItem = new ToolStripMenuItem();
             relatóriosToolStripMenuItem = new ToolStripMenuItem();
+            usuáriosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = SystemColors.Control;
             menuStrip1.Items.AddRange(new ToolStripItem[] { opçõesToolStripMenuItem, cadastrosToolStripMenuItem, janelasToolStripMenuItem1, relatóriosToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
@@ -50,13 +53,21 @@
             // 
             // opçõesToolStripMenuItem
             // 
+            opçõesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { loginSistemaToolStripMenuItem });
             opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
             opçõesToolStripMenuItem.Size = new Size(59, 20);
             opçõesToolStripMenuItem.Text = "Opções";
             // 
+            // loginSistemaToolStripMenuItem
+            // 
+            loginSistemaToolStripMenuItem.Name = "loginSistemaToolStripMenuItem";
+            loginSistemaToolStripMenuItem.Size = new Size(148, 22);
+            loginSistemaToolStripMenuItem.Text = "Login Sistema";
+            loginSistemaToolStripMenuItem.Click += loginSistemaToolStripMenuItem_Click;
+            // 
             // cadastrosToolStripMenuItem
             // 
-            cadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { produtoToolStripMenuItem1, importarXMLToolStripMenuItem1 });
+            cadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { produtoToolStripMenuItem1, importarXMLToolStripMenuItem1, usuáriosToolStripMenuItem });
             cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             cadastrosToolStripMenuItem.Size = new Size(71, 20);
             cadastrosToolStripMenuItem.Text = "Cadastros";
@@ -64,13 +75,13 @@
             // produtoToolStripMenuItem1
             // 
             produtoToolStripMenuItem1.Name = "produtoToolStripMenuItem1";
-            produtoToolStripMenuItem1.Size = new Size(147, 22);
+            produtoToolStripMenuItem1.Size = new Size(180, 22);
             produtoToolStripMenuItem1.Text = "Produto";
             // 
             // importarXMLToolStripMenuItem1
             // 
             importarXMLToolStripMenuItem1.Name = "importarXMLToolStripMenuItem1";
-            importarXMLToolStripMenuItem1.Size = new Size(147, 22);
+            importarXMLToolStripMenuItem1.Size = new Size(180, 22);
             importarXMLToolStripMenuItem1.Text = "Importar XML";
             importarXMLToolStripMenuItem1.Click += importarXMLToolStripMenuItem1_Click;
             // 
@@ -93,6 +104,13 @@
             relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
             relatóriosToolStripMenuItem.Size = new Size(71, 20);
             relatóriosToolStripMenuItem.Text = "Relatórios";
+            // 
+            // usuáriosToolStripMenuItem
+            // 
+            usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
+            usuáriosToolStripMenuItem.Size = new Size(180, 22);
+            usuáriosToolStripMenuItem.Text = "Usuários";
+            usuáriosToolStripMenuItem.Click += usuáriosToolStripMenuItem_Click;
             // 
             // MainWindow
             // 
@@ -121,5 +139,7 @@
         private ToolStripMenuItem importarXMLToolStripMenuItem1;
         private ToolStripMenuItem janelasToolStripMenuItem1;
         private ToolStripMenuItem filtroProdutosToolStripMenuItem;
+        private ToolStripMenuItem loginSistemaToolStripMenuItem;
+        private ToolStripMenuItem usuáriosToolStripMenuItem;
     }
 }

@@ -10,7 +10,6 @@ namespace ControleDeValidades.Views.UC
         {
             InitializeComponent();
 
-            // Adiciona a coluna com o DateTimePicker assim que o controle for carregado
             AdicionarColunaDateTimePicker();
         }
 
@@ -30,13 +29,29 @@ namespace ControleDeValidades.Views.UC
                         Txb_ChaveNFe.Text = pathXml;
                         NFeData data = new NFeData();
                         var dados = data.ReturnDados(pathXml);
+
+                        Txb_RzSocial.Text = data.Fornecedor;
+                        TxB_Cnpj.Text = data.CNPJ;
+                        Txb_ChaveNFe.Text = data.ChaveNFe;
+                        Txb_NumNfe.Text = data.NumeroNFe;
+                        Dtp_DataEmissao.Value = data.DataEmissao;
+
                         Dgv_DadosXML.DataSource = dados;
+
                         Dgv_DadosXML.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
                         Dgv_DadosXML.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                        Dgv_DadosXML.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                        Dgv_DadosXML.Columns[3].Visible = false;
                         Dgv_DadosXML.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
                         Dgv_DadosXML.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-                        Dgv_DadosXML.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                        Dgv_DadosXML.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                        Dgv_DadosXML.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                        Dgv_DadosXML.Columns[8].Visible = false;
+                        Dgv_DadosXML.Columns[9].Visible = false;
+                        Dgv_DadosXML.Columns[10].Visible = false;
+                        Dgv_DadosXML.Columns[11].Visible = false;
+                        Dgv_DadosXML.Columns[12].Visible = false;
+
+
 
                     }
                 }
@@ -65,7 +80,10 @@ namespace ControleDeValidades.Views.UC
                         produto.PRONQUANT = int.Parse( row.Cells["Quantidade"].Value.ToString());
                         produto.PROCFOR = row.Cells["Fornecedor"].Value.ToString();
                         produto.PRODDATVAL = Convert.ToDateTime(row.Cells["Validades"].Value.ToString());
-                        produto.PRODDATCAD = DateTime.Now;
+                        produto.PRODDATCAD = Dtp_DataEntrada.Value;
+                        produto.PROCCODINT = row.Cells["CODINT"].Value.ToString();
+                        produto.PROCNNUMNF = Txb_NumNfe.Text;
+                        
                         produto.Incluir();
                     }
                 }
@@ -77,7 +95,6 @@ namespace ControleDeValidades.Views.UC
 
         private void AdicionarColunaDateTimePicker()
         {
-            // Adiciona uma nova coluna com um DateTimePicker
             var datePickerColumn = new DataGridViewColumn(new DataGridViewDateTimePickerCell());
             datePickerColumn.HeaderText = "Validades";
             datePickerColumn.Name = "Validades";
@@ -89,11 +106,9 @@ namespace ControleDeValidades.Views.UC
     {
         public DataGridViewDateTimePickerCell()
         {
-            // Define o tipo de controle editável
             this.Style.Format = "dd/MM/yyyy";
         }
 
-        // Sobrescreve o método de inicialização para definir o tipo de controle de edição
         public override void InitializeEditingControl(int rowIndex, object initialFormattedValue, DataGridViewCellStyle dataGridViewCellStyle)
         {
             base.InitializeEditingControl(rowIndex, initialFormattedValue, dataGridViewCellStyle);
@@ -107,13 +122,10 @@ namespace ControleDeValidades.Views.UC
             }
         }
 
-        // Sobrescreve o tipo de célula para garantir que ele seja do tipo DateTimePicker
         public override Type EditType => typeof(DataGridViewDateTimePickerEditingControl);
 
-        // Define o valor inicial para a célula de edição
         public override object DefaultNewRowValue => DateTime.Now.Date;
 
-        // Sobrescreve o método Clone para garantir que a célula seja clonada corretamente
         public override object Clone()
         {
             var cell = base.Clone() as DataGridViewDateTimePickerCell;
@@ -132,8 +144,6 @@ namespace ControleDeValidades.Views.UC
         private DataGridView dataGridView;
         private bool valueChanged = false;
         private int rowIndex;
-
-        // Implementação da interface IDataGridViewEditingControl
         public void ApplyCellStyleToEditingControl(DataGridViewCellStyle dataGridViewCellStyle)
         {
             this.Font = dataGridViewCellStyle.Font;
@@ -173,7 +183,6 @@ namespace ControleDeValidades.Views.UC
 
         public bool EditingControlWantsInputKey(Keys keyData, bool dataGridViewWantsInputKey)
         {
-            // Let the DateTimePicker handle the keys listed.
             switch (keyData & Keys.KeyCode)
             {
                 case Keys.Left:
@@ -202,7 +211,7 @@ namespace ControleDeValidades.Views.UC
 
         public void PrepareEditingControlForEdit(bool selectAll)
         {
-            // No preparation needs to be done.
+            
         }
 
         public bool RepositionEditingControlOnValueChange
@@ -212,7 +221,6 @@ namespace ControleDeValidades.Views.UC
 
         protected override void OnValueChanged(EventArgs eventargs)
         {
-            // Notify the DataGridView that the contents of the cell have changed.
             valueChanged = true;
             this.EditingControlDataGridView.NotifyCurrentCellDirty(true);
             base.OnValueChanged(eventargs);

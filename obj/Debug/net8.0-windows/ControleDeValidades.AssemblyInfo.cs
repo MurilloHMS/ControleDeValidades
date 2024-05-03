@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ControleDeValidades")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af7195d2378588bdc7e8d48bcdd88e291356f2f7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58bdf4f377d2a05157ea2501af8287d11d5a3e90")]
 [assembly: System.Reflection.AssemblyProductAttribute("ControleDeValidades")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ControleDeValidades")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

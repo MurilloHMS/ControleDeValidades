@@ -61,26 +61,27 @@ namespace ControleDeValidades.Views.UC
 
             Dgv_FiltroProdutos.DataSource = resultado;
             Dgv_FiltroProdutos.Columns[0].Visible = false;
-            Dgv_FiltroProdutos.Columns[1].HeaderText = "Data Vencimento";
-            Dgv_FiltroProdutos.Columns[2].HeaderText = "Referência";
+            Dgv_FiltroProdutos.Columns[1].HeaderText = "Data Lançamento";
+            Dgv_FiltroProdutos.Columns[2].HeaderText = "Código Interno";
             Dgv_FiltroProdutos.Columns[3].HeaderText = "Descrição";
-            Dgv_FiltroProdutos.Columns[4].HeaderText = "Quant.";
+            Dgv_FiltroProdutos.Columns[4].Visible = false;
             Dgv_FiltroProdutos.Columns[5].HeaderText = "Fornecedor";
-            Dgv_FiltroProdutos.Columns[6].HeaderText = "Status";
-            Dgv_FiltroProdutos.Columns[7].Visible = false;
-            Dgv_FiltroProdutos.Columns[8].Visible = false;
-            Dgv_FiltroProdutos.Columns[9].Visible = false;
+            Dgv_FiltroProdutos.Columns[6].HeaderText = "Quantidade";
+            Dgv_FiltroProdutos.Columns[7].HeaderText = "Data De Validade";
+            Dgv_FiltroProdutos.Columns[8].HeaderText = "Status";
+            Dgv_FiltroProdutos.Columns[9].HeaderText = "NFe";
             Dgv_FiltroProdutos.Columns[10].Visible = false;
+            Dgv_FiltroProdutos.Columns[11].Visible = false;
+            Dgv_FiltroProdutos.Columns[12].Visible = false;
 
             Dgv_FiltroProdutos.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             Dgv_FiltroProdutos.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             Dgv_FiltroProdutos.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             Dgv_FiltroProdutos.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
             Dgv_FiltroProdutos.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
-            Dgv_FiltroProdutos.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-
-
-
+            Dgv_FiltroProdutos.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            Dgv_FiltroProdutos.Columns[8].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+            Dgv_FiltroProdutos.Columns[9].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
 
             Txb_QuantTot.Text = resultado.Count().ToString();
             int quantidadeProduto = 0;

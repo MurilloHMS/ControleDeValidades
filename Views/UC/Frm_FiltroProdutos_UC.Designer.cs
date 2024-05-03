@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             groupBox3 = new GroupBox();
             Txb_QuantTotProd = new TextBox();
             label13 = new Label();
@@ -60,6 +61,7 @@
             Txb_Descricao = new TextBox();
             label9 = new Label();
             label8 = new Label();
+            label14 = new Label();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Dgv_FiltroProdutos).BeginInit();
@@ -226,9 +228,9 @@
             // 
             groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             groupBox2.Controls.Add(Dgv_FiltroProdutos);
-            groupBox2.Location = new Point(12, 129);
+            groupBox2.Location = new Point(12, 186);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1098, 449);
+            groupBox2.Size = new Size(1098, 392);
             groupBox2.TabIndex = 3;
             groupBox2.TabStop = false;
             groupBox2.Text = "Dados";
@@ -237,12 +239,25 @@
             // 
             Dgv_FiltroProdutos.AllowUserToAddRows = false;
             Dgv_FiltroProdutos.AllowUserToDeleteRows = false;
-            Dgv_FiltroProdutos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            Dgv_FiltroProdutos.BackgroundColor = SystemColors.Control;
+            Dgv_FiltroProdutos.BorderStyle = BorderStyle.None;
+            Dgv_FiltroProdutos.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(21, 76, 121);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            Dgv_FiltroProdutos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            Dgv_FiltroProdutos.ColumnHeadersHeight = 25;
             Dgv_FiltroProdutos.Dock = DockStyle.Fill;
+            Dgv_FiltroProdutos.EnableHeadersVisualStyles = false;
             Dgv_FiltroProdutos.Location = new Point(3, 19);
             Dgv_FiltroProdutos.Name = "Dgv_FiltroProdutos";
             Dgv_FiltroProdutos.ReadOnly = true;
-            Dgv_FiltroProdutos.Size = new Size(1092, 427);
+            Dgv_FiltroProdutos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            Dgv_FiltroProdutos.Size = new Size(1092, 370);
             Dgv_FiltroProdutos.TabIndex = 0;
             // 
             // groupBox1
@@ -256,7 +271,7 @@
             groupBox1.Controls.Add(Txb_Descricao);
             groupBox1.Controls.Add(label9);
             groupBox1.Controls.Add(label8);
-            groupBox1.Location = new Point(12, 12);
+            groupBox1.Location = new Point(12, 69);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(1098, 111);
             groupBox1.TabIndex = 4;
@@ -373,10 +388,24 @@
             label8.TabIndex = 0;
             label8.Text = "Descrição";
             // 
+            // label14
+            // 
+            label14.BackColor = Color.FromArgb(21, 76, 121);
+            label14.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.ForeColor = Color.White;
+            label14.Location = new Point(0, 0);
+            label14.Name = "label14";
+            label14.Size = new Size(1124, 37);
+            label14.TabIndex = 0;
+            label14.Text = "CONTROLE DE VALIDADE - ALIMENTOS ♥";
+            label14.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // Frm_FiltroProdutos_UC
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
+            Controls.Add(label14);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -428,5 +457,6 @@
         private Button button1;
         private Label label12;
         private ComboBox Cb_Vencimentos;
+        private Label label14;
     }
 }
