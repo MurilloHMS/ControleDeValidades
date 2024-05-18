@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Globalization;
-using System.IO;
-using System.Windows.Forms;
-using System.Xml.Linq;
+﻿using System.Xml.Linq;
 
 namespace ControleDeValidades
 {

@@ -29,6 +29,7 @@ namespace ControleDeValidades.Views.UC
                 users.Email = Txb_Email.Text;
                 users.ValidaClasse();
                 users.Incluir();
+                MessageBox.Show("Usuário Incluido com Sucesso");
 
             }catch(ValidationException ex)
             {

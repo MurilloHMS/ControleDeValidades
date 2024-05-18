@@ -35,5 +35,11 @@ namespace ControleDeValidades.Models
             return dAL.ObterRegistroPor(usuario => usuario.Email.ToUpper().Equals(email.ToUpper()));
 
         }
+
+        public IEnumerable<Usuarios> RetornaUsuarios()
+        {
+            var dal = new DAL<Usuarios>();
+            return dal.ObterRegistros();
+        }
     }
 }

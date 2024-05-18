@@ -108,7 +108,7 @@
             label13.AutoSize = true;
             label13.Location = new Point(99, 34);
             label13.Name = "label13";
-            label13.Size = new Size(119, 15);
+            label13.Size = new Size(120, 15);
             label13.TabIndex = 14;
             label13.Text = "Quant Total Produtos";
             // 
@@ -220,7 +220,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(15, 34);
             label1.Name = "label1";
-            label1.Size = new Size(68, 15);
+            label1.Size = new Size(69, 15);
             label1.TabIndex = 0;
             label1.Text = "Quant Total";
             // 
@@ -361,6 +361,7 @@
             Cb_Fornecedor.Name = "Cb_Fornecedor";
             Cb_Fornecedor.Size = new Size(201, 23);
             Cb_Fornecedor.TabIndex = 2;
+            Cb_Fornecedor.SelectedIndexChanged += Cb_Fornecedor_SelectedIndexChanged;
             // 
             // Txb_Descricao
             // 

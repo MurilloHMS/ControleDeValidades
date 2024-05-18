@@ -11,7 +11,7 @@ namespace ControleDeValidades.Models
             if (ValidaEmail(usuario))
             {
                 dados = usuarios.BuscaEmail(usuario);
-                if ((senha == dados.Senha) && (usuario == dados.Email))
+                if ((senha == dados.Senha) && (usuario.ToUpper() == dados.Email.ToUpper()))
                 {
                     return true;
                 }
@@ -19,7 +19,7 @@ namespace ControleDeValidades.Models
             else
             {
                 dados = usuarios.BuscaUsuario(usuario);
-                if ((senha == dados.Senha) && (usuario == dados.Nome))
+                if ((senha == dados.Senha) && (usuario.ToUpper() == dados.Nome.ToUpper()))
                 {
                     return true;
                 }

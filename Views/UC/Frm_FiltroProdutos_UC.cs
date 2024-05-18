@@ -12,7 +12,6 @@ namespace ControleDeValidades.Views.UC
         {
             InitializeComponent();
 
-            Txb_Descricao.TextChanged += Txb_Descricao_TextChanged;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -21,13 +20,70 @@ namespace ControleDeValidades.Views.UC
             {
 
             }
-            else if (Cb_Vencimentos.SelectedItem == "Todos")
+            else
             {
-                DAL<Produto> dal = new DAL<Produto>();
-                var resultado = dal.ObterRegistros();
-                PreencherInformações(resultado.ToList());
+                //DAL<Produto> dal = new DAL<Produto>();
+                //var resultado = dal.ObterRegistros();
+                //PreencherInformações(resultado.ToList());
+                Dgv_FiltroProdutos.DataSource = string.Empty;
+                string filtro = Cb_Vencimentos.SelectedItem.ToString();
+                FiltroBuscaProdutos(filtro);
             }
         }
+
+        private void FiltroBuscaProdutos(string filtro)
+        {
+            DAL<Produto> dal = new DAL<Produto>();
+            var resultado = dal.ObterRegistros();
+            DateTime hoje = DateTime.Today;
+            IEnumerable<Produto> produtosFiltrados = Enumerable.Empty<Produto>();
+
+            switch (filtro)
+            {
+                case "Todos":
+                    produtosFiltrados = resultado;
+                    break;
+
+                case "Vencimento em até 30 Dias":
+                    produtosFiltrados = resultado.Where(p => p.PRODDATVAL >= hoje && p.PRODDATVAL <= hoje.AddDays(30));
+                    break;
+
+                case "Vencimento em até 20 Dias":
+                    produtosFiltrados = resultado.Where(p => p.PRODDATVAL >= hoje && p.PRODDATVAL <= hoje.AddDays(20));
+                    break;
+
+                case "Vencimento em até 15 Dias":
+                    produtosFiltrados = resultado.Where(p => p.PRODDATVAL >= hoje && p.PRODDATVAL <= hoje.AddDays(15));
+                    break;
+
+                case "Vencimento em até 10 Dias":
+                    produtosFiltrados = resultado.Where(p => p.PRODDATVAL >= hoje && p.PRODDATVAL <= hoje.AddDays(10));
+                    break;
+
+                case "Vencimento em até 7 Dias":
+                    produtosFiltrados = resultado.Where(p => p.PRODDATVAL >= hoje && p.PRODDATVAL <= hoje.AddDays(7));
+                    break;
+
+                case "Vencimento em até 3 Dias":
+                    produtosFiltrados = resultado.Where(p => p.PRODDATVAL >= hoje && p.PRODDATVAL <= hoje.AddDays(3));
+                    break;
+
+                case "Vencidos":
+                    produtosFiltrados = resultado.Where(p => p.PRODDATVAL < hoje);
+                    break;
+
+                default:
+                    produtosFiltrados = resultado;
+                    break;
+            }
+
+            PreencherInformações(produtosFiltrados.ToList());
+        }
+
+
+
+
+
 
         private void PreencherInformações(List<Produto> resultado)
         {
@@ -37,24 +93,24 @@ namespace ControleDeValidades.Views.UC
                 TimeSpan time = produto.PRODDATVAL - hoje;
                 if (time.TotalDays > 1)
                 {
-                    produto.PROCSTAT = $"Falta {time.TotalDays} Dias Para Vencer";
+                    produto.PROCSTAT = $"Faltam {Math.Ceiling(time.TotalDays)} Dias Para Vencer";
                 }
-                if (time.TotalDays < 0)
+                else if (time.TotalDays < 0)
                 {
-                    produto.PROCSTAT = $"Está {Math.Abs(time.TotalDays)} Dias Vencido";
+                    produto.PROCSTAT = $"Está vencido há {Math.Abs(Math.Floor(time.TotalDays))} Dias";
                 }
-                if (time.TotalDays == 1)
+                else if (time.TotalDays == 1)
                 {
-                    produto.PROCSTAT = $"Falta {time.TotalDays} dia para vencer";
+                    produto.PROCSTAT = $"Falta 1 dia para vencer";
                 }
-                if (time.TotalDays == 0)
+                else if (time.TotalDays == 0)
                 {
                     produto.PROCSTAT = "Vence Hoje";
                 }
-
             }
 
-            produtos = resultado;
+
+        produtos = resultado;
             bindingSource.DataSource = resultado;
             Dgv_FiltroProdutos.DataSource = bindingSource;
 
@@ -138,6 +194,7 @@ namespace ControleDeValidades.Views.UC
             Txb_Vencidos.Text = vencidos.ToString();
 
             List<string> fornecedores = RecuperaFornecedores(resultado);
+            Cb_Fornecedor.Items.Clear();
             foreach (var item in fornecedores)
             {
                 Cb_Fornecedor.Items.Add(item);
@@ -159,6 +216,13 @@ namespace ControleDeValidades.Views.UC
         {
             string filtro = Txb_Descricao.Text.ToLower();
             bindingSource.DataSource = produtos.Where(produto => produto.PROCDESCR.ToLower().Contains(filtro)).ToList();
+            Dgv_FiltroProdutos.DataSource = bindingSource.DataSource;
+        }
+
+        private void Cb_Fornecedor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string filtro = Cb_Fornecedor.SelectedItem.ToString();
+            bindingSource.DataSource = produtos.Where(produto => produto.PROCFOR.ToLower().Contains(filtro.ToLower())).ToList();
             Dgv_FiltroProdutos.DataSource = bindingSource.DataSource;
         }
     }

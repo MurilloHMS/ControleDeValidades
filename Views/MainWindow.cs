@@ -13,7 +13,6 @@ namespace ControleDeValidades
 
             alteraOpcoes(false);
 
-            ConectarNoSistema();
         }
 
         private void alteraOpcoes(bool valor)
@@ -37,6 +36,7 @@ namespace ControleDeValidades
                 if (Validacao.ValidaSenhaLogin(usuario, senha))
                 {
                     alteraOpcoes(true);
+                    MessageBox.Show("Login Efetuado com sucesso!", "Autenticação", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 else
