@@ -10,6 +10,9 @@
     <Compile Update="Views\Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\Frm_Relatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -22,5 +25,10 @@
     <Compile Update="Views\UC\Frm_FiltroProdutos_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="DataSets\ProdutosFiltro.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
 </Project>

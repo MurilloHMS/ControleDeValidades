@@ -82,3 +82,4 @@ A:\projects\primulla\ControleDeValidades\obj\Debug\net8.0-windows\ControleDeVali
 A:\projects\primulla\ControleDeValidades\obj\Debug\net8.0-windows\ControleDeValidades.Properties.Resources.resources
 A:\projects\primulla\ControleDeValidades\obj\Debug\net8.0-windows\ControleDeValidades.Views.Frm_Login.resources
 A:\projects\primulla\ControleDeValidades\obj\Debug\net8.0-windows\ControleDeValidades.Views.UC.Frm_CadastroUsuarios_UC.resources
+A:\projects\primulla\ControleDeValidades\obj\Debug\net8.0-windows\ControleDeValidades.Views.Frm_Relatorio.resources

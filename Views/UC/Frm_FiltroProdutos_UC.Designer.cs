@@ -62,6 +62,7 @@
             label9 = new Label();
             label8 = new Label();
             label14 = new Label();
+            button2 = new Button();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Dgv_FiltroProdutos).BeginInit();
@@ -263,6 +264,7 @@
             // groupBox1
             // 
             groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox1.Controls.Add(button2);
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(label12);
             groupBox1.Controls.Add(Cb_Vencimentos);
@@ -280,7 +282,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(964, 48);
+            button1.Location = new Point(964, 26);
             button1.Name = "button1";
             button1.Size = new Size(117, 23);
             button1.TabIndex = 10;
@@ -401,6 +403,16 @@
             label14.Text = "CONTROLE DE VALIDADE - ALIMENTOS ♥";
             label14.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // button2
+            // 
+            button2.Location = new Point(996, 69);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 11;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Frm_FiltroProdutos_UC
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -459,5 +471,6 @@
         private Label label12;
         private ComboBox Cb_Vencimentos;
         private Label label14;
+        private Button button2;
     }
 }

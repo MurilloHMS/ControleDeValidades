@@ -8,6 +8,8 @@ namespace ControleDeValidades.Views.UC
         private BindingSource bindingSource = new BindingSource();
         private List<Produto> produtos = new List<Produto>();
 
+        private List<Produto> _dados = new List<Produto>();
+
         public Frm_FiltroProdutos_UC()
         {
             InitializeComponent();
@@ -22,9 +24,6 @@ namespace ControleDeValidades.Views.UC
             }
             else
             {
-                //DAL<Produto> dal = new DAL<Produto>();
-                //var resultado = dal.ObterRegistros();
-                //PreencherInformações(resultado.ToList());
                 Dgv_FiltroProdutos.DataSource = string.Empty;
                 string filtro = Cb_Vencimentos.SelectedItem.ToString();
                 FiltroBuscaProdutos(filtro);
@@ -78,12 +77,8 @@ namespace ControleDeValidades.Views.UC
             }
 
             PreencherInformações(produtosFiltrados.ToList());
-        }
-
-
-
-
-
+            _dados = produtosFiltrados.ToList();                                                                                                
+        }                                                                   
 
         private void PreencherInformações(List<Produto> resultado)
         {
@@ -110,7 +105,7 @@ namespace ControleDeValidades.Views.UC
             }
 
 
-        produtos = resultado;
+            produtos = resultado;
             bindingSource.DataSource = resultado;
             Dgv_FiltroProdutos.DataSource = bindingSource;
 
@@ -224,6 +219,12 @@ namespace ControleDeValidades.Views.UC
             string filtro = Cb_Fornecedor.SelectedItem.ToString();
             bindingSource.DataSource = produtos.Where(produto => produto.PROCFOR.ToLower().Contains(filtro.ToLower())).ToList();
             Dgv_FiltroProdutos.DataSource = bindingSource.DataSource;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Frm_Relatorio frm = new Frm_Relatorio(_dados);
+            frm.ShowDialog();
         }
     }
 }
