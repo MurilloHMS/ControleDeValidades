@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "A:\\projects\\primulla\\ControleDeValidades\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|a:\\projects\\primulla\\controledevalidades\\relatorios\\relatorioprodutos.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:relatorios\\relatorioprodutos.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|a:\\projects\\primulla\\controledevalidades\\views\\frm_relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|a:\\projects\\primulla\\controledevalidades\\views\\frm_relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_relatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|a:\\projects\\primulla\\controledevalidades\\views\\uc\\frm_filtroprodutos_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_filtroprodutos_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|a:\\projects\\primulla\\controledevalidades\\datasets\\produtosfiltro.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:datasets\\produtosfiltro.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|a:\\projects\\primulla\\controledevalidades\\views\\uc\\frm_filtroprodutos_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_filtroprodutos_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|a:\\projects\\primulla\\controledevalidades\\views\\frm_relatorio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_relatorio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|a:\\projects\\primulla\\controledevalidades\\relatorios\\relatorioprodutos.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:relatorios\\relatorioprodutos.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,11 +22,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Frm_FiltroProdutos_UC.cs",
+              "DocumentMoniker": "A:\\projects\\primulla\\ControleDeValidades\\Views\\UC\\Frm_FiltroProdutos_UC.cs",
+              "RelativeDocumentMoniker": "Views\\UC\\Frm_FiltroProdutos_UC.cs",
+              "ToolTip": "A:\\projects\\primulla\\ControleDeValidades\\Views\\UC\\Frm_FiltroProdutos_UC.cs",
+              "RelativeToolTip": "Views\\UC\\Frm_FiltroProdutos_UC.cs",
+              "ViewState": "AQIAANUAAAAAAAAAAADwv/UAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T05:39:41.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "RelatorioProdutos.rdlc [Criar]",
               "DocumentMoniker": "A:\\projects\\primulla\\ControleDeValidades\\Relatorios\\RelatorioProdutos.rdlc",
               "RelativeDocumentMoniker": "Relatorios\\RelatorioProdutos.rdlc",
@@ -53,62 +54,8 @@
               "EditorCaption": " [Criar]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Frm_Relatorio.cs [Projeto]",
-              "DocumentMoniker": "A:\\projects\\primulla\\ControleDeValidades\\Views\\Frm_Relatorio.cs",
-              "RelativeDocumentMoniker": "Views\\Frm_Relatorio.cs",
-              "ToolTip": "A:\\projects\\primulla\\ControleDeValidades\\Views\\Frm_Relatorio.cs [Projeto]",
-              "RelativeToolTip": "Views\\Frm_Relatorio.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T17:02:09.068Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Frm_Relatorio.cs",
-              "DocumentMoniker": "A:\\projects\\primulla\\ControleDeValidades\\Views\\Frm_Relatorio.cs",
-              "RelativeDocumentMoniker": "Views\\Frm_Relatorio.cs",
-              "ToolTip": "A:\\projects\\primulla\\ControleDeValidades\\Views\\Frm_Relatorio.cs",
-              "RelativeToolTip": "Views\\Frm_Relatorio.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T17:06:22.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Frm_FiltroProdutos_UC.cs",
-              "DocumentMoniker": "A:\\projects\\primulla\\ControleDeValidades\\Views\\UC\\Frm_FiltroProdutos_UC.cs",
-              "RelativeDocumentMoniker": "Views\\UC\\Frm_FiltroProdutos_UC.cs",
-              "ToolTip": "A:\\projects\\primulla\\ControleDeValidades\\Views\\UC\\Frm_FiltroProdutos_UC.cs",
-              "RelativeToolTip": "Views\\UC\\Frm_FiltroProdutos_UC.cs",
-              "ViewState": "AQIAANEAAAAAAAAAAAAAwOEAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T17:42:23.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProdutosFiltro.xsd",
-              "DocumentMoniker": "A:\\projects\\primulla\\ControleDeValidades\\DataSets\\ProdutosFiltro.xsd",
-              "RelativeDocumentMoniker": "DataSets\\ProdutosFiltro.xsd",
-              "ToolTip": "A:\\projects\\primulla\\ControleDeValidades\\DataSets\\ProdutosFiltro.xsd",
-              "RelativeToolTip": "DataSets\\ProdutosFiltro.xsd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2024-05-19T17:35:16.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Frm_FiltroProdutos_UC.cs [Projeto]",
               "DocumentMoniker": "A:\\projects\\primulla\\ControleDeValidades\\Views\\UC\\Frm_FiltroProdutos_UC.cs",
               "RelativeDocumentMoniker": "Views\\UC\\Frm_FiltroProdutos_UC.cs",
@@ -117,19 +64,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T19:00:09.854Z",
               "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Frm_Relatorio.Designer.cs",
-              "DocumentMoniker": "A:\\projects\\primulla\\ControleDeValidades\\Views\\Frm_Relatorio.Designer.cs",
-              "RelativeDocumentMoniker": "Views\\Frm_Relatorio.Designer.cs",
-              "ToolTip": "A:\\projects\\primulla\\ControleDeValidades\\Views\\Frm_Relatorio.Designer.cs",
-              "RelativeToolTip": "Views\\Frm_Relatorio.Designer.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwDQAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T17:02:36.658Z",
-              "EditorCaption": ""
             }
           ]
         }

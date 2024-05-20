@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             groupBox3 = new GroupBox();
             Txb_QuantTotProd = new TextBox();
             label13 = new Label();
@@ -49,25 +49,21 @@
             groupBox2 = new GroupBox();
             Dgv_FiltroProdutos = new DataGridView();
             groupBox1 = new GroupBox();
+            button2 = new Button();
             button1 = new Button();
             label12 = new Label();
             Cb_Vencimentos = new ComboBox();
-            groupBox4 = new GroupBox();
-            dateTimePicker2 = new DateTimePicker();
-            label11 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            label10 = new Label();
             Cb_Fornecedor = new ComboBox();
             Txb_Descricao = new TextBox();
             label9 = new Label();
             label8 = new Label();
             label14 = new Label();
-            button2 = new Button();
+            Txb_NFe = new TextBox();
+            label10 = new Label();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Dgv_FiltroProdutos).BeginInit();
             groupBox1.SuspendLayout();
-            groupBox4.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox3
@@ -243,14 +239,14 @@
             Dgv_FiltroProdutos.BackgroundColor = SystemColors.Control;
             Dgv_FiltroProdutos.BorderStyle = BorderStyle.None;
             Dgv_FiltroProdutos.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(21, 76, 121);
-            dataGridViewCellStyle1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            Dgv_FiltroProdutos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(21, 76, 121);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            Dgv_FiltroProdutos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             Dgv_FiltroProdutos.ColumnHeadersHeight = 25;
             Dgv_FiltroProdutos.Dock = DockStyle.Fill;
             Dgv_FiltroProdutos.EnableHeadersVisualStyles = false;
@@ -264,11 +260,12 @@
             // groupBox1
             // 
             groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox1.Controls.Add(Txb_NFe);
+            groupBox1.Controls.Add(label10);
             groupBox1.Controls.Add(button2);
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(label12);
             groupBox1.Controls.Add(Cb_Vencimentos);
-            groupBox1.Controls.Add(groupBox4);
             groupBox1.Controls.Add(Cb_Fornecedor);
             groupBox1.Controls.Add(Txb_Descricao);
             groupBox1.Controls.Add(label9);
@@ -280,9 +277,19 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Filtros";
             // 
+            // button2
+            // 
+            button2.Location = new Point(964, 48);
+            button2.Name = "button2";
+            button2.Size = new Size(117, 23);
+            button2.TabIndex = 11;
+            button2.Text = "Imprimir";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // button1
             // 
-            button1.Location = new Point(964, 26);
+            button1.Location = new Point(830, 48);
             button1.Name = "button1";
             button1.Size = new Size(117, 23);
             button1.TabIndex = 10;
@@ -293,7 +300,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(418, 30);
+            label12.Location = new Point(637, 30);
             label12.Name = "label12";
             label12.Size = new Size(105, 15);
             label12.TabIndex = 9;
@@ -301,65 +308,20 @@
             // 
             // Cb_Vencimentos
             // 
+            Cb_Vencimentos.DropDownStyle = ComboBoxStyle.DropDownList;
             Cb_Vencimentos.FormattingEnabled = true;
             Cb_Vencimentos.Items.AddRange(new object[] { "Vencimento em até 30 Dias", "Vencimento em até 20 Dias", "Vencimento em até 15 Dias", "Vencimento em até 10 Dias", "Vencimento em até 7 Dias", "Vencimento em até 3 Dias", "Vencidos", "Todos" });
-            Cb_Vencimentos.Location = new Point(418, 48);
+            Cb_Vencimentos.Location = new Point(637, 48);
             Cb_Vencimentos.Name = "Cb_Vencimentos";
             Cb_Vencimentos.Size = new Size(184, 23);
             Cb_Vencimentos.TabIndex = 8;
             // 
-            // groupBox4
-            // 
-            groupBox4.Controls.Add(dateTimePicker2);
-            groupBox4.Controls.Add(label11);
-            groupBox4.Controls.Add(dateTimePicker1);
-            groupBox4.Controls.Add(label10);
-            groupBox4.Location = new Point(629, 11);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(320, 76);
-            groupBox4.TabIndex = 5;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "Data de Entrada";
-            // 
-            // dateTimePicker2
-            // 
-            dateTimePicker2.Format = DateTimePickerFormat.Short;
-            dateTimePicker2.Location = new Point(168, 35);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(98, 23);
-            dateTimePicker2.TabIndex = 10;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(137, 41);
-            label11.Name = "label11";
-            label11.Size = new Size(25, 15);
-            label11.TabIndex = 9;
-            label11.Text = "Até";
-            // 
-            // dateTimePicker1
-            // 
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(33, 35);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(98, 23);
-            dateTimePicker1.TabIndex = 8;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(6, 41);
-            label10.Name = "label10";
-            label10.Size = new Size(21, 15);
-            label10.TabIndex = 7;
-            label10.Text = "De";
-            // 
             // Cb_Fornecedor
             // 
+            Cb_Fornecedor.DropDownStyle = ComboBoxStyle.DropDownList;
             Cb_Fornecedor.FormattingEnabled = true;
             Cb_Fornecedor.Items.AddRange(new object[] { "  " });
-            Cb_Fornecedor.Location = new Point(211, 48);
+            Cb_Fornecedor.Location = new Point(430, 48);
             Cb_Fornecedor.Name = "Cb_Fornecedor";
             Cb_Fornecedor.Size = new Size(201, 23);
             Cb_Fornecedor.TabIndex = 2;
@@ -376,7 +338,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(211, 30);
+            label9.Location = new Point(430, 30);
             label9.Name = "label9";
             label9.Size = new Size(67, 15);
             label9.TabIndex = 0;
@@ -403,15 +365,22 @@
             label14.Text = "CONTROLE DE VALIDADE - ALIMENTOS ♥";
             label14.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // Txb_NFe
             // 
-            button2.Location = new Point(996, 69);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 11;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            Txb_NFe.Location = new Point(221, 48);
+            Txb_NFe.Name = "Txb_NFe";
+            Txb_NFe.Size = new Size(190, 23);
+            Txb_NFe.TabIndex = 13;
+            Txb_NFe.TextChanged += Txb_NFe_TextChanged;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(221, 30);
+            label10.Name = "label10";
+            label10.Size = new Size(28, 15);
+            label10.TabIndex = 12;
+            label10.Text = "NFe";
             // 
             // Frm_FiltroProdutos_UC
             // 
@@ -430,8 +399,6 @@
             ((System.ComponentModel.ISupportInitialize)Dgv_FiltroProdutos).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            groupBox4.ResumeLayout(false);
-            groupBox4.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -456,11 +423,6 @@
         private GroupBox groupBox2;
         private DataGridView Dgv_FiltroProdutos;
         private GroupBox groupBox1;
-        private GroupBox groupBox4;
-        private DateTimePicker dateTimePicker2;
-        private Label label11;
-        private DateTimePicker dateTimePicker1;
-        private Label label10;
         private ComboBox Cb_Fornecedor;
         private TextBox Txb_Descricao;
         private Label label9;
@@ -472,5 +434,7 @@
         private ComboBox Cb_Vencimentos;
         private Label label14;
         private Button button2;
+        private TextBox Txb_NFe;
+        private Label label10;
     }
 }

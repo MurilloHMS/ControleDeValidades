@@ -77,8 +77,8 @@ namespace ControleDeValidades.Views.UC
             }
 
             PreencherInformações(produtosFiltrados.ToList());
-            _dados = produtosFiltrados.ToList();                                                                                                
-        }                                                                   
+            _dados = produtosFiltrados.ToList();
+        }
 
         private void PreencherInformações(List<Produto> resultado)
         {
@@ -210,21 +210,40 @@ namespace ControleDeValidades.Views.UC
         private void Txb_Descricao_TextChanged(object sender, EventArgs e)
         {
             string filtro = Txb_Descricao.Text.ToLower();
-            bindingSource.DataSource = produtos.Where(produto => produto.PROCDESCR.ToLower().Contains(filtro)).ToList();
-            Dgv_FiltroProdutos.DataSource = bindingSource.DataSource;
+            var dados = produtos.Where(produto => produto.PROCDESCR.ToLower().Contains(filtro.ToLower())).ToList();
+            Dgv_FiltroProdutos.DataSource = dados;
+            _dados = dados;
         }
 
         private void Cb_Fornecedor_SelectedIndexChanged(object sender, EventArgs e)
         {
             string filtro = Cb_Fornecedor.SelectedItem.ToString();
-            bindingSource.DataSource = produtos.Where(produto => produto.PROCFOR.ToLower().Contains(filtro.ToLower())).ToList();
-            Dgv_FiltroProdutos.DataSource = bindingSource.DataSource;
+            var dados = produtos.Where(produto => produto.PROCFOR.ToLower().Contains(filtro.ToLower())).ToList();
+            Dgv_FiltroProdutos.DataSource = dados;
+            _dados = dados;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Frm_Relatorio frm = new Frm_Relatorio(_dados);
-            frm.ShowDialog();
+
+            if (string.IsNullOrEmpty(Txb_Descricao.Text) && string.IsNullOrEmpty(Cb_Fornecedor.Text) && string.IsNullOrEmpty(Cb_Vencimentos.Text))
+            {
+
+            }
+            else
+            {
+                Frm_Relatorio frm = new Frm_Relatorio(_dados);
+                frm.ShowDialog();
+            }
+
+        }
+
+        private void Txb_NFe_TextChanged(object sender, EventArgs e)
+        {
+            string filtro = Txb_NFe.Text.ToLower();
+            var dados = produtos.Where(produto => produto.PROCNNUMNF.ToLower().Contains(filtro.ToLower())).ToList();
+            Dgv_FiltroProdutos.DataSource = dados;
+            _dados = dados;
         }
     }
 }
