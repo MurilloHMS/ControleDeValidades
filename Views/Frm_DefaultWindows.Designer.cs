@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_DefaultWindows));
             Tb_MainWindow = new TabControl();
             SuspendLayout();
             // 
@@ -46,12 +47,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1154, 722);
             Controls.Add(Tb_MainWindow);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MdiChildrenMinimizedAnchorBottom = false;
             Name = "Frm_DefaultWindows";
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Frm_FiltroProdutos";
             ResumeLayout(false);
         }
 

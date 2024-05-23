@@ -278,6 +278,7 @@
             button3.TabIndex = 2;
             button3.Text = "Importar Todos Os Produtos";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // Frm_ImportarXml_UC
             // 

@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             menuStrip1 = new MenuStrip();
             opçõesToolStripMenuItem = new ToolStripMenuItem();
             loginSistemaToolStripMenuItem = new ToolStripMenuItem();
             cadastrosToolStripMenuItem = new ToolStripMenuItem();
             produtoToolStripMenuItem1 = new ToolStripMenuItem();
             importarXMLToolStripMenuItem1 = new ToolStripMenuItem();
+            usuáriosToolStripMenuItem = new ToolStripMenuItem();
             janelasToolStripMenuItem1 = new ToolStripMenuItem();
             filtroProdutosToolStripMenuItem = new ToolStripMenuItem();
-            relatóriosToolStripMenuItem = new ToolStripMenuItem();
-            usuáriosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.BackColor = SystemColors.Control;
-            menuStrip1.Items.AddRange(new ToolStripItem[] { opçõesToolStripMenuItem, cadastrosToolStripMenuItem, janelasToolStripMenuItem1, relatóriosToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { opçõesToolStripMenuItem, cadastrosToolStripMenuItem, janelasToolStripMenuItem1 });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1123, 24);
@@ -60,6 +60,7 @@
             // 
             // loginSistemaToolStripMenuItem
             // 
+            loginSistemaToolStripMenuItem.Image = Properties.Resources.Connected_People;
             loginSistemaToolStripMenuItem.Name = "loginSistemaToolStripMenuItem";
             loginSistemaToolStripMenuItem.Size = new Size(148, 22);
             loginSistemaToolStripMenuItem.Text = "Login Sistema";
@@ -74,16 +75,27 @@
             // 
             // produtoToolStripMenuItem1
             // 
+            produtoToolStripMenuItem1.Image = Properties.Resources.New_Product_1;
             produtoToolStripMenuItem1.Name = "produtoToolStripMenuItem1";
             produtoToolStripMenuItem1.Size = new Size(180, 22);
             produtoToolStripMenuItem1.Text = "Produto";
+            produtoToolStripMenuItem1.Click += produtoToolStripMenuItem1_Click;
             // 
             // importarXMLToolStripMenuItem1
             // 
+            importarXMLToolStripMenuItem1.Image = Properties.Resources.XML_Transformer_1;
             importarXMLToolStripMenuItem1.Name = "importarXMLToolStripMenuItem1";
             importarXMLToolStripMenuItem1.Size = new Size(180, 22);
             importarXMLToolStripMenuItem1.Text = "Importar XML";
             importarXMLToolStripMenuItem1.Click += importarXMLToolStripMenuItem1_Click;
+            // 
+            // usuáriosToolStripMenuItem
+            // 
+            usuáriosToolStripMenuItem.Image = Properties.Resources.Add_User_Group_Woman_Man;
+            usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
+            usuáriosToolStripMenuItem.Size = new Size(180, 22);
+            usuáriosToolStripMenuItem.Text = "Usuários";
+            usuáriosToolStripMenuItem.Click += usuáriosToolStripMenuItem_Click;
             // 
             // janelasToolStripMenuItem1
             // 
@@ -94,23 +106,11 @@
             // 
             // filtroProdutosToolStripMenuItem
             // 
+            filtroProdutosToolStripMenuItem.Image = Properties.Resources.Search_Property;
             filtroProdutosToolStripMenuItem.Name = "filtroProdutosToolStripMenuItem";
             filtroProdutosToolStripMenuItem.Size = new Size(152, 22);
             filtroProdutosToolStripMenuItem.Text = "Filtro Produtos";
             filtroProdutosToolStripMenuItem.Click += filtroProdutosToolStripMenuItem_Click;
-            // 
-            // relatóriosToolStripMenuItem
-            // 
-            relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            relatóriosToolStripMenuItem.Size = new Size(71, 20);
-            relatóriosToolStripMenuItem.Text = "Relatórios";
-            // 
-            // usuáriosToolStripMenuItem
-            // 
-            usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            usuáriosToolStripMenuItem.Size = new Size(180, 22);
-            usuáriosToolStripMenuItem.Text = "Usuários";
-            usuáriosToolStripMenuItem.Click += usuáriosToolStripMenuItem_Click;
             // 
             // MainWindow
             // 
@@ -118,6 +118,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1123, 754);
             Controls.Add(menuStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
             Name = "MainWindow";
@@ -133,7 +134,6 @@
         #endregion
         private MenuStrip menuStrip1;
         private ToolStripMenuItem opçõesToolStripMenuItem;
-        private ToolStripMenuItem relatóriosToolStripMenuItem;
         private ToolStripMenuItem cadastrosToolStripMenuItem;
         private ToolStripMenuItem produtoToolStripMenuItem1;
         private ToolStripMenuItem importarXMLToolStripMenuItem1;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\projects\\primulla\\ControleDeValidades\\ControleDeValidades.csproj": {}
+    "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj": {}
   },
   "projects": {
-    "A:\\projects\\primulla\\ControleDeValidades\\ControleDeValidades.csproj": {
+    "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\projects\\primulla\\ControleDeValidades\\ControleDeValidades.csproj",
+        "projectUniqueName": "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj",
         "projectName": "ControleDeValidades",
-        "projectPath": "A:\\projects\\primulla\\ControleDeValidades\\ControleDeValidades.csproj",
+        "projectPath": "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj",
         "packagesPath": "C:\\Users\\murillo\\.nuget\\packages\\",
-        "outputPath": "A:\\projects\\primulla\\ControleDeValidades\\obj\\",
+        "outputPath": "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\murillo\\AppData\\Roaming\\NuGet\\NuGet.Config",

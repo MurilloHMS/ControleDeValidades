@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Relatorio));
             reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
             SuspendLayout();
             // 
@@ -47,8 +48,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(reportViewer2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Frm_Relatorio";
-            Text = "Frm_Relatorio";
+            Text = "Relatório";
             ResumeLayout(false);
             PerformLayout();
         }

@@ -1,5 +1,6 @@
 ﻿using ControleDeValidades.Models;
 using System;
+using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
 namespace ControleDeValidades.Views.UC
@@ -64,33 +65,53 @@ namespace ControleDeValidades.Views.UC
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            AdicionarDadosAoBanco();
+        }
+
+        private void AdicionarDadosAoBanco()
+        {
             DialogResult msg = MessageBox.Show("Deseja incluir os produtos Selecionados?", "Inclusão de cadastros", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (msg == DialogResult.Yes)
             {
+                // Verificar se todas as linhas selecionadas têm a coluna "Validades" preenchida
                 foreach (DataGridViewRow row in Dgv_DadosXML.Rows)
                 {
                     DataGridViewCheckBoxCell checkBox = row.Cells[0] as DataGridViewCheckBoxCell;
                     if (Convert.ToBoolean(checkBox.Value) == true)
                     {
+                        // Verificar se a célula da coluna "Validades" está preenchida
+                        if (row.Cells["Validades"].Value == null || string.IsNullOrWhiteSpace(row.Cells["Validades"].Value.ToString()))
+                        {
+                            MessageBox.Show("A coluna 'Validades' deve estar preenchida para todos os produtos selecionados.", "Erro de validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
+                }
 
+                // Se todas as colunas "Validades" estiverem preenchidas, prosseguir com a inclusão
+                foreach (DataGridViewRow row in Dgv_DadosXML.Rows)
+                {
+                    DataGridViewCheckBoxCell checkBox = row.Cells[0] as DataGridViewCheckBoxCell;
+                    if (Convert.ToBoolean(checkBox.Value) == true)
+                    {
                         Produto produto = new Produto();
                         produto.PROCREF = row.Cells["Referência"].Value.ToString();
                         produto.PROCDESCR = row.Cells["Descrição"].Value.ToString();
-                        produto.PRONQUANT = int.Parse( row.Cells["Quantidade"].Value.ToString());
+                        produto.PRONQUANT = int.Parse(row.Cells["Quantidade"].Value.ToString());
                         produto.PROCFOR = row.Cells["Fornecedor"].Value.ToString();
                         produto.PRODDATVAL = Convert.ToDateTime(row.Cells["Validades"].Value.ToString());
                         produto.PRODDATCAD = Dtp_DataEntrada.Value;
                         produto.PROCCODINT = row.Cells["CODINT"].Value.ToString();
                         produto.PROCNNUMNF = Txb_NumNfe.Text;
-                        
+
                         produto.Incluir();
                     }
                 }
 
-                MessageBox.Show("Dados Incluidos com sucesso!", "inclusao de dados", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Dados Incluídos com sucesso!", "Inclusão de dados", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            
         }
 
         private void AdicionarColunaDateTimePicker()
@@ -99,6 +120,20 @@ namespace ControleDeValidades.Views.UC
             datePickerColumn.HeaderText = "Validades";
             datePickerColumn.Name = "Validades";
             Dgv_DadosXML.Columns.Add(datePickerColumn);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            foreach(DataGridViewRow row in Dgv_DadosXML.Rows)
+            {
+                DataGridViewCheckBoxCell checkBox = row.Cells[0] as DataGridViewCheckBoxCell;
+                if (checkBox != null)
+                {
+                    checkBox.Value = true;
+                }
+            }
+            AdicionarDadosAoBanco();
+
         }
     }
 

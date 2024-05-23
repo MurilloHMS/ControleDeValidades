@@ -73,6 +73,14 @@ namespace ControleDeValidades
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void produtoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Frm_CadastroDeProduto_UC cadastroDeProduto_UC = new Frm_CadastroDeProduto_UC();
+            Frm_DefaultWindows frm = new Frm_DefaultWindows(cadastroDeProduto_UC, "CadastroProdutos", "Cadastro de Produtos");
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 
 

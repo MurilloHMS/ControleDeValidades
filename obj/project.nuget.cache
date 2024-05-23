@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S38CRZhQ6U7NbX2JtcEaPDqBL6xdGUAgY8AHaiYBI/xRuIul2rES1w2o2vZgx7TfJjJK6e/HmCSszkNnEdtLAA==",
+  "dgSpecHash": "rzQ76+94gp5W7xIEI5J4JUpe75IXn0saUwPSPK5vvkEsSvIuM+C4biDTg+8ZRth/na3Ai3El8THerHfdDjfv4A==",
   "success": true,
-  "projectFilePath": "A:\\projects\\primulla\\ControleDeValidades\\ControleDeValidades.csproj",
+  "projectFilePath": "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\murillo\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\murillo\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
