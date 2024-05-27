@@ -1,14 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\",
+  "WorkspaceRootPath": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|a:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\uc\\frm_cadastrodeproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_cadastrodeproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ControleDeValidades/True/SqlTable/dbo.Usuarios.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|a:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\uc\\frm_cadastrodeproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_cadastrodeproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\uc\\frm_cadastrousuarios_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_cadastrousuarios_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\uc\\frm_cadastrousuarios_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_cadastrousuarios_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,36 +29,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 239,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dbo.Usuarios [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/ControleDeValidades/True/SqlTable/dbo.Usuarios.sql",
+              "ToolTip": "dbo.Usuarios [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-27T15:55:50.333Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Frm_CadastroDeProduto_UC.cs [Projeto]",
-              "DocumentMoniker": "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_CadastroDeProduto_UC.cs",
-              "RelativeDocumentMoniker": "Views\\UC\\Frm_CadastroDeProduto_UC.cs",
-              "ToolTip": "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_CadastroDeProduto_UC.cs [Projeto]",
-              "RelativeToolTip": "Views\\UC\\Frm_CadastroDeProduto_UC.cs [Projeto]",
+              "Title": "MainWindow.cs",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\MainWindow.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\MainWindow.cs",
+              "RelativeToolTip": "Views\\MainWindow.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAhwDwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T21:05:42.384Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2024-05-27T15:31:55.968Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Frm_CadastroDeProduto_UC.cs",
-              "DocumentMoniker": "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_CadastroDeProduto_UC.cs",
-              "RelativeDocumentMoniker": "Views\\UC\\Frm_CadastroDeProduto_UC.cs",
-              "ToolTip": "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_CadastroDeProduto_UC.cs",
-              "RelativeToolTip": "Views\\UC\\Frm_CadastroDeProduto_UC.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAuwCcAAAAyAAAA",
+              "DocumentIndex": 2,
+              "Title": "Frm_Login.cs [Design]",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_Login.cs",
+              "RelativeDocumentMoniker": "Views\\Frm_Login.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_Login.cs [Design]",
+              "RelativeToolTip": "Views\\Frm_Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T21:03:06.366Z",
+              "WhenOpened": "2024-05-27T15:06:02.888Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Frm_CadastroUsuarios_UC.cs",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_CadastroUsuarios_UC.cs",
+              "RelativeDocumentMoniker": "Views\\UC\\Frm_CadastroUsuarios_UC.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_CadastroUsuarios_UC.cs",
+              "RelativeToolTip": "Views\\UC\\Frm_CadastroUsuarios_UC.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowCoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T18:59:08.086Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Frm_CadastroUsuarios_UC.cs [Design]",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_CadastroUsuarios_UC.cs",
+              "RelativeDocumentMoniker": "Views\\UC\\Frm_CadastroUsuarios_UC.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_CadastroUsuarios_UC.cs [Design]",
+              "RelativeToolTip": "Views\\UC\\Frm_CadastroUsuarios_UC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T18:26:21.666Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

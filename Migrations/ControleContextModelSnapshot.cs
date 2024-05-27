@@ -25,6 +25,50 @@ namespace ControleDeValidades.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("ControleDeValidades.Models.MenuAcessos", b =>
+                {
+                    b.Property<int>("Id_Usuario")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Id_Opcao")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("ID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Liberado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(1)");
+
+                    b.HasKey("Id_Usuario", "Id_Opcao");
+
+                    b.ToTable("MenuAcessos");
+                });
+
+            modelBuilder.Entity("ControleDeValidades.Models.Opcoes", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<byte>("Nivel")
+                        .HasColumnType("tinyint");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Opcoes");
+                });
+
             modelBuilder.Entity("ControleDeValidades.Models.Produto", b =>
                 {
                     b.Property<int>("PRONID_PRO")
@@ -34,7 +78,6 @@ namespace ControleDeValidades.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PRONID_PRO"));
 
                     b.Property<string>("PROCCODINT")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PROCDESCR")
@@ -46,11 +89,9 @@ namespace ControleDeValidades.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PROCNNUMNF")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PROCREF")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PROCSTAT")
@@ -76,7 +117,7 @@ namespace ControleDeValidades.Migrations
 
                     b.HasKey("PRONID_PRO");
 
-                    b.ToTable("produtos");
+                    b.ToTable("Produtos");
                 });
 
             modelBuilder.Entity("ControleDeValidades.Models.Usuarios", b =>
@@ -86,6 +127,10 @@ namespace ControleDeValidades.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("Ativo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(1)");
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
@@ -100,7 +145,7 @@ namespace ControleDeValidades.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("usuarios");
+                    b.ToTable("Usuarios");
                 });
 #pragma warning restore 612, 618
         }

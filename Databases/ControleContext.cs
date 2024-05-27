@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ControleDeValidades.Models;
-using System;
-using System.IO;
-using System.Linq;
+using System.Data.SqlClient;
+using Microsoft.EntityFrameworkCore.Internal;
+using System.Windows.Forms;
 
 namespace ControleDeValidades.Databases
 {
@@ -13,6 +13,7 @@ namespace ControleDeValidades.Databases
 
         public DbSet<Produto> Produtos {  get; set; }
         public DbSet<Usuarios> Usuarios { get; set; }
+        public DbSet<Opcoes> Opcoes { get; set; }
 
         public ControleContext()
         {
@@ -22,9 +23,9 @@ namespace ControleDeValidades.Databases
                 Directory.CreateDirectory(dbDiretorio);
             }
 
-            string PathArquivo = Path.Combine(dbDiretorio, "ControleDeValidadesPrimulla.mdf");
+            string PathArquivo = Path.Combine(dbDiretorio, "ControleDeValidades.mdf");
   
-            _connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={PathArquivo};Database=ControleDeValidades;Integrated Security=True;Connect Timeout=30";
+            _connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={PathArquivo};Initial Catalog=ControleDeValidades;Integrated Security=True;Connect Timeout=30";
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -33,6 +34,9 @@ namespace ControleDeValidades.Databases
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<MenuAcessos>()
+                .HasKey(ma => new { ma.Id_Usuario, ma.Id_Opcao });
+
             base.OnModelCreating(modelBuilder);
         }
 
@@ -63,17 +67,69 @@ namespace ControleDeValidades.Databases
                     {
                         Nome = "Admin",
                         Email = "admin@outlook.com",
-                        Senha = "Admin"
+                        Senha = "Admin",
+                        Ativo = Convert.ToChar("Y")
                     },
                     new Usuarios
                     {
                         Nome = "Suporte",
                         Email = "Suporte@Outlook.com",
-                        Senha = "Xj7hpmtmma@"
+                        Senha = "Xj7hpmtmma@",
+                        Ativo = Convert.ToChar("Y")
                     }
                 );
                 SaveChanges();
             }
+
+            if (!Opcoes.Any())
+            {
+                Opcoes.AddRange(
+                    new Opcoes
+                    {
+                        Id = 1,
+                        Nome = "loginSistemaToolStripMenuItem",
+                        Descricao = "Opções / Login Sistema",
+                        Nivel = 2
+                    },
+                    new Opcoes
+                    {
+                        Id = 2,
+                        Nome = "desconectarToolStripMenuItem",
+                        Descricao = "Opções / Desconectar",
+                        Nivel = 2
+                    },
+                    new Opcoes
+                    {
+                        Id = 3,
+                        Nome = "produtoToolStripMenuItem1",
+                        Descricao = "Cadastros / Produto",
+                        Nivel = 2
+                    },
+                    new Opcoes
+                    {
+                        Id = 4,
+                        Nome = "importarXMLToolStripMenuItem1",
+                        Descricao = "Cadastros / Importar XML",
+                        Nivel = 2
+                    },
+                    new Opcoes
+                    {
+                        Id = 5,
+                        Nome = "usuáriosToolStripMenuItem",
+                        Descricao = "Cadastros / Usuários",
+                        Nivel = 2
+                    },
+                    new Opcoes
+                    {
+                        Id = 6,
+                        Nome = "filtroProdutosToolStripMenuItem",
+                        Descricao = "Janelas / Filtro Produtos",
+                        Nivel = 2
+                    }
+                );
+                SaveChanges();
+            }
+
         }
     }
 }

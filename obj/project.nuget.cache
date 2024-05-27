@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rzQ76+94gp5W7xIEI5J4JUpe75IXn0saUwPSPK5vvkEsSvIuM+C4biDTg+8ZRth/na3Ai3El8THerHfdDjfv4A==",
+  "dgSpecHash": "7gigwHQS3H4=",
   "success": true,
-  "projectFilePath": "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj",
+  "projectFilePath": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\murillo\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\murillo\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -169,7 +169,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Versão detectada do pacote fora da restrição de dependência: Microsoft.CodeAnalysis.VisualBasic 4.8.0-3.final requer Microsoft.CodeAnalysis.Common (= 4.8.0-3.final), mas a versão Microsoft.CodeAnalysis.Common 4.9.2 foi resolvida.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.VisualBasic 4.8.0-3.final requires Microsoft.CodeAnalysis.Common (= 4.8.0-3.final) but version Microsoft.CodeAnalysis.Common 4.9.2 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0-windows7.0"
@@ -179,7 +179,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Versão detectada do pacote fora da restrição de dependência: Microsoft.CodeAnalysis.CSharp.Workspaces 4.5.0 requer Microsoft.CodeAnalysis.Common (= 4.5.0), mas a versão Microsoft.CodeAnalysis.Common 4.9.2 foi resolvida.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Workspaces 4.5.0 requires Microsoft.CodeAnalysis.Common (= 4.5.0) but version Microsoft.CodeAnalysis.Common 4.9.2 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0-windows7.0"
@@ -189,7 +189,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Versão detectada do pacote fora da restrição de dependência: Microsoft.CodeAnalysis.CSharp 4.5.0 requer Microsoft.CodeAnalysis.Common (= 4.5.0), mas a versão Microsoft.CodeAnalysis.Common 4.9.2 foi resolvida.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp 4.5.0 requires Microsoft.CodeAnalysis.Common (= 4.5.0) but version Microsoft.CodeAnalysis.Common 4.9.2 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0-windows7.0"
@@ -199,7 +199,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Versão detectada do pacote fora da restrição de dependência: Microsoft.CodeAnalysis.Workspaces.Common 4.5.0 requer Microsoft.CodeAnalysis.Common (= 4.5.0), mas a versão Microsoft.CodeAnalysis.Common 4.9.2 foi resolvida.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.Workspaces.Common 4.5.0 requires Microsoft.CodeAnalysis.Common (= 4.5.0) but version Microsoft.CodeAnalysis.Common 4.9.2 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0-windows7.0"

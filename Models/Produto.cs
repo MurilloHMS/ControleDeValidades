@@ -14,13 +14,13 @@ namespace ControleDeValidades.Models
         [Required(ErrorMessage = "É necessario preencher a data de validade")]
         public DateTime PRODDATCAD { get; set; } //Data Lançamento
         //
-        public string PROCCODINT {  get; set; } // Codigo interno
+        public string? PROCCODINT {  get; set; } // Codigo interno
         //
         [Required(ErrorMessage = "É necessario preencher a descrição do produto")]
         public string PROCDESCR { get; set; } //Descrição do produto
         //
         //[Required(ErrorMessage = "É necessario preencher a referência do produto")]
-        public string PROCREF { get; set; } //Referencia Fornecedor
+        public string? PROCREF { get; set; } //Referencia Fornecedor
         //
         [Required(ErrorMessage = "É necessario preencher o fornecedor do produto")]
         public string PROCFOR { get; set; } //Fornecedor 
@@ -33,7 +33,7 @@ namespace ControleDeValidades.Models
         //
         public string? PROCSTAT { get; set; } // Status
         //
-        public string PROCNNUMNF { get; set; } //Número NFe
+        public string? PROCNNUMNF { get; set; } //Número NFe
 
         public DateTime? PRODDATALT { get; set; }
 

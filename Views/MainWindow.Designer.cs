@@ -32,13 +32,17 @@
             menuStrip1 = new MenuStrip();
             opçõesToolStripMenuItem = new ToolStripMenuItem();
             loginSistemaToolStripMenuItem = new ToolStripMenuItem();
+            desconectarToolStripMenuItem = new ToolStripMenuItem();
             cadastrosToolStripMenuItem = new ToolStripMenuItem();
             produtoToolStripMenuItem1 = new ToolStripMenuItem();
             importarXMLToolStripMenuItem1 = new ToolStripMenuItem();
             usuáriosToolStripMenuItem = new ToolStripMenuItem();
             janelasToolStripMenuItem1 = new ToolStripMenuItem();
             filtroProdutosToolStripMenuItem = new ToolStripMenuItem();
+            statusStrip1 = new StatusStrip();
+            toolStripStatusLabel1 = new ToolStripStatusLabel();
             menuStrip1.SuspendLayout();
+            statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
@@ -53,7 +57,7 @@
             // 
             // opçõesToolStripMenuItem
             // 
-            opçõesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { loginSistemaToolStripMenuItem });
+            opçõesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { loginSistemaToolStripMenuItem, desconectarToolStripMenuItem });
             opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
             opçõesToolStripMenuItem.Size = new Size(59, 20);
             opçõesToolStripMenuItem.Text = "Opções";
@@ -66,6 +70,12 @@
             loginSistemaToolStripMenuItem.Text = "Login Sistema";
             loginSistemaToolStripMenuItem.Click += loginSistemaToolStripMenuItem_Click;
             // 
+            // desconectarToolStripMenuItem
+            // 
+            desconectarToolStripMenuItem.Name = "desconectarToolStripMenuItem";
+            desconectarToolStripMenuItem.Size = new Size(148, 22);
+            desconectarToolStripMenuItem.Text = "Desconectar";
+            // 
             // cadastrosToolStripMenuItem
             // 
             cadastrosToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { produtoToolStripMenuItem1, importarXMLToolStripMenuItem1, usuáriosToolStripMenuItem });
@@ -77,7 +87,7 @@
             // 
             produtoToolStripMenuItem1.Image = Properties.Resources.New_Product_1;
             produtoToolStripMenuItem1.Name = "produtoToolStripMenuItem1";
-            produtoToolStripMenuItem1.Size = new Size(180, 22);
+            produtoToolStripMenuItem1.Size = new Size(147, 22);
             produtoToolStripMenuItem1.Text = "Produto";
             produtoToolStripMenuItem1.Click += produtoToolStripMenuItem1_Click;
             // 
@@ -85,7 +95,7 @@
             // 
             importarXMLToolStripMenuItem1.Image = Properties.Resources.XML_Transformer_1;
             importarXMLToolStripMenuItem1.Name = "importarXMLToolStripMenuItem1";
-            importarXMLToolStripMenuItem1.Size = new Size(180, 22);
+            importarXMLToolStripMenuItem1.Size = new Size(147, 22);
             importarXMLToolStripMenuItem1.Text = "Importar XML";
             importarXMLToolStripMenuItem1.Click += importarXMLToolStripMenuItem1_Click;
             // 
@@ -93,7 +103,7 @@
             // 
             usuáriosToolStripMenuItem.Image = Properties.Resources.Add_User_Group_Woman_Man;
             usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            usuáriosToolStripMenuItem.Size = new Size(180, 22);
+            usuáriosToolStripMenuItem.Size = new Size(147, 22);
             usuáriosToolStripMenuItem.Text = "Usuários";
             usuáriosToolStripMenuItem.Click += usuáriosToolStripMenuItem_Click;
             // 
@@ -112,11 +122,28 @@
             filtroProdutosToolStripMenuItem.Text = "Filtro Produtos";
             filtroProdutosToolStripMenuItem.Click += filtroProdutosToolStripMenuItem_Click;
             // 
+            // statusStrip1
+            // 
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
+            statusStrip1.Location = new Point(0, 732);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.RenderMode = ToolStripRenderMode.Professional;
+            statusStrip1.Size = new Size(1123, 22);
+            statusStrip1.TabIndex = 3;
+            statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            toolStripStatusLabel1.Size = new Size(117, 17);
+            toolStripStatusLabel1.Text = "Usuário Conectado : ";
+            // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1123, 754);
+            Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
@@ -127,6 +154,8 @@
             WindowState = FormWindowState.Maximized;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -141,5 +170,8 @@
         private ToolStripMenuItem filtroProdutosToolStripMenuItem;
         private ToolStripMenuItem loginSistemaToolStripMenuItem;
         private ToolStripMenuItem usuáriosToolStripMenuItem;
+        private ToolStripMenuItem desconectarToolStripMenuItem;
+        private StatusStrip statusStrip1;
+        private ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

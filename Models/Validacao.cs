@@ -2,29 +2,37 @@
 
 namespace ControleDeValidades.Models
 {
-    internal class Validacao
+    public class Validacao
     {
-        public static bool ValidaSenhaLogin(string usuario, string senha)
+        public string mensagem;
+        public bool ValidaSenhaLogin(string usuario, string senha)
         {
             Usuarios usuarios = new Usuarios();
-            Usuarios dados;
-            if (ValidaEmail(usuario))
+            Usuarios dados = ValidaUsuario(usuario);
+
+            if (dados != null && dados.Ativo == 'Y' && ValidaCredenciais(usuario, senha, dados))
             {
-                dados = usuarios.BuscaEmail(usuario);
-                if ((senha == dados.Senha) && (usuario.ToUpper() == dados.Email.ToUpper()))
-                {
-                    return true;
-                }
+                mensagem = "Login Efetuado com Sucesso!";
+                return true;
             }
             else
             {
-                dados = usuarios.BuscaUsuario(usuario);
-                if ((senha == dados.Senha) && (usuario.ToUpper() == dados.Nome.ToUpper()))
-                {
-                    return true;
-                }
+                mensagem = dados != null && dados.Ativo == 'Y' ? "Senha Incorreta!" : "Usuário Inativo";
+                return false;
             }
-            return false;
+
+
+        }
+
+        private Usuarios ValidaUsuario(string usuario)
+        {
+            Usuarios usuarios = new Usuarios();
+            return ValidaEmail(usuario) ? usuarios.BuscaEmail(usuario) : usuarios.BuscaUsuario(usuario);
+        }
+
+        private bool ValidaCredenciais(string usuario, string senha, Usuarios dados)
+        {
+            return (senha == dados.Senha) &&  (usuario.ToUpper() ==(ValidaEmail(usuario) ? dados.Email.ToUpper() : dados.Nome.ToUpper()));
         }
 
         private static bool ValidaEmail(string email)

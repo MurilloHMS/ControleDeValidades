@@ -1,0 +1,20 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ControleDeValidades.Models
+{
+    public class MenuAcessos
+    {
+        [Key]
+        public int Id_Usuario {  get; set; }
+        [Key]
+        public string Id_Opcao { get; set; }
+        public char Liberado { get; set; }
+        public int ID {  get; set; }
+    }
+}

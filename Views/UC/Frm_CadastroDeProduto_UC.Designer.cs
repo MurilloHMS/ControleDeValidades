@@ -31,6 +31,7 @@
             groupBox1 = new GroupBox();
             Dtp_DataValidade = new DateTimePicker();
             Txt_Fornecedor = new TextBox();
+            Txt_Quantidade = new TextBox();
             Txt_CodInterno = new TextBox();
             Txt_NumNFe = new TextBox();
             Txt_Referencia = new TextBox();
@@ -43,13 +44,11 @@
             label2 = new Label();
             label1 = new Label();
             Btn_Inserir = new Button();
-            Btn_Alterar = new Button();
             Btn_Excluir = new Button();
             groupBox2 = new GroupBox();
+            Btn_Salvar = new Button();
             groupBox3 = new GroupBox();
             Dgv_Produtos = new DataGridView();
-            Btn_Salvar = new Button();
-            Txt_Quantidade = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -85,35 +84,42 @@
             Dtp_DataValidade.Location = new Point(536, 50);
             Dtp_DataValidade.Name = "Dtp_DataValidade";
             Dtp_DataValidade.Size = new Size(102, 23);
-            Dtp_DataValidade.TabIndex = 2;
+            Dtp_DataValidade.TabIndex = 3;
             // 
             // Txt_Fornecedor
             // 
             Txt_Fornecedor.Location = new Point(31, 94);
             Txt_Fornecedor.Name = "Txt_Fornecedor";
             Txt_Fornecedor.Size = new Size(400, 23);
-            Txt_Fornecedor.TabIndex = 1;
+            Txt_Fornecedor.TabIndex = 5;
+            // 
+            // Txt_Quantidade
+            // 
+            Txt_Quantidade.Location = new Point(448, 50);
+            Txt_Quantidade.Name = "Txt_Quantidade";
+            Txt_Quantidade.Size = new Size(69, 23);
+            Txt_Quantidade.TabIndex = 2;
             // 
             // Txt_CodInterno
             // 
             Txt_CodInterno.Location = new Point(655, 47);
             Txt_CodInterno.Name = "Txt_CodInterno";
             Txt_CodInterno.Size = new Size(134, 23);
-            Txt_CodInterno.TabIndex = 1;
+            Txt_CodInterno.TabIndex = 4;
             // 
             // Txt_NumNFe
             // 
             Txt_NumNFe.Location = new Point(655, 94);
             Txt_NumNFe.Name = "Txt_NumNFe";
             Txt_NumNFe.Size = new Size(134, 23);
-            Txt_NumNFe.TabIndex = 1;
+            Txt_NumNFe.TabIndex = 7;
             // 
             // Txt_Referencia
             // 
             Txt_Referencia.Location = new Point(448, 94);
             Txt_Referencia.Name = "Txt_Referencia";
             Txt_Referencia.Size = new Size(190, 23);
-            Txt_Referencia.TabIndex = 1;
+            Txt_Referencia.TabIndex = 6;
             // 
             // label7
             // 
@@ -190,40 +196,42 @@
             Btn_Inserir.Location = new Point(46, 32);
             Btn_Inserir.Name = "Btn_Inserir";
             Btn_Inserir.Size = new Size(140, 23);
-            Btn_Inserir.TabIndex = 4;
-            Btn_Inserir.Text = "Inserir";
+            Btn_Inserir.TabIndex = 8;
+            Btn_Inserir.Text = "&Inserir";
             Btn_Inserir.UseVisualStyleBackColor = true;
             Btn_Inserir.Click += Btn_Inserir_Click;
             // 
-            // Btn_Alterar
-            // 
-            Btn_Alterar.Location = new Point(46, 61);
-            Btn_Alterar.Name = "Btn_Alterar";
-            Btn_Alterar.Size = new Size(140, 23);
-            Btn_Alterar.TabIndex = 4;
-            Btn_Alterar.Text = "Alterar";
-            Btn_Alterar.UseVisualStyleBackColor = true;
-            // 
             // Btn_Excluir
             // 
-            Btn_Excluir.Location = new Point(46, 90);
+            Btn_Excluir.Location = new Point(46, 73);
             Btn_Excluir.Name = "Btn_Excluir";
             Btn_Excluir.Size = new Size(140, 23);
-            Btn_Excluir.TabIndex = 4;
-            Btn_Excluir.Text = "Excluir";
+            Btn_Excluir.TabIndex = 9;
+            Btn_Excluir.Text = "&Limpar Tabela";
             Btn_Excluir.UseVisualStyleBackColor = true;
+            Btn_Excluir.Click += Btn_Excluir_Click;
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(Btn_Salvar);
             groupBox2.Controls.Add(Btn_Inserir);
             groupBox2.Controls.Add(Btn_Excluir);
-            groupBox2.Controls.Add(Btn_Alterar);
             groupBox2.Location = new Point(868, 19);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(234, 151);
             groupBox2.TabIndex = 5;
             groupBox2.TabStop = false;
             groupBox2.Text = "Controles";
+            // 
+            // Btn_Salvar
+            // 
+            Btn_Salvar.Location = new Point(46, 112);
+            Btn_Salvar.Name = "Btn_Salvar";
+            Btn_Salvar.Size = new Size(140, 23);
+            Btn_Salvar.TabIndex = 10;
+            Btn_Salvar.Text = "&Salvar Produtos";
+            Btn_Salvar.UseVisualStyleBackColor = true;
+            Btn_Salvar.Click += Btn_Salvar_Click;
             // 
             // groupBox3
             // 
@@ -244,27 +252,10 @@
             Dgv_Produtos.Size = new Size(1079, 434);
             Dgv_Produtos.TabIndex = 0;
             // 
-            // Btn_Salvar
-            // 
-            Btn_Salvar.Location = new Point(455, 664);
-            Btn_Salvar.Name = "Btn_Salvar";
-            Btn_Salvar.Size = new Size(176, 23);
-            Btn_Salvar.TabIndex = 7;
-            Btn_Salvar.Text = "Salvar Produtos";
-            Btn_Salvar.UseVisualStyleBackColor = true;
-            // 
-            // Txt_Quantidade
-            // 
-            Txt_Quantidade.Location = new Point(448, 50);
-            Txt_Quantidade.Name = "Txt_Quantidade";
-            Txt_Quantidade.Size = new Size(69, 23);
-            Txt_Quantidade.TabIndex = 1;
-            // 
             // Frm_CadastroDeProduto_UC
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(Btn_Salvar);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -293,7 +284,6 @@
         private TextBox Txt_Referencia;
         private TextBox Txt_NumNFe;
         private Button Btn_Inserir;
-        private Button Btn_Alterar;
         private Button Btn_Excluir;
         private GroupBox groupBox2;
         private GroupBox groupBox3;

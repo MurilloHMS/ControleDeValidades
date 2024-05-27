@@ -84,6 +84,7 @@
             // 
             Txb_NumNfe.Location = new Point(885, 110);
             Txb_NumNfe.Name = "Txb_NumNfe";
+            Txb_NumNfe.ReadOnly = true;
             Txb_NumNfe.Size = new Size(82, 23);
             Txb_NumNfe.TabIndex = 13;
             // 
@@ -91,6 +92,7 @@
             // 
             TxB_Cnpj.Location = new Point(439, 110);
             TxB_Cnpj.Name = "TxB_Cnpj";
+            TxB_Cnpj.ReadOnly = true;
             TxB_Cnpj.Size = new Size(180, 23);
             TxB_Cnpj.TabIndex = 12;
             // 
@@ -123,6 +125,7 @@
             // 
             Txb_RzSocial.Location = new Point(42, 110);
             Txb_RzSocial.Name = "Txb_RzSocial";
+            Txb_RzSocial.ReadOnly = true;
             Txb_RzSocial.Size = new Size(368, 23);
             Txb_RzSocial.TabIndex = 8;
             // 
@@ -176,6 +179,7 @@
             // 
             Txb_ChaveNFe.Location = new Point(42, 46);
             Txb_ChaveNFe.Name = "Txb_ChaveNFe";
+            Txb_ChaveNFe.ReadOnly = true;
             Txb_ChaveNFe.Size = new Size(774, 23);
             Txb_ChaveNFe.TabIndex = 1;
             // 

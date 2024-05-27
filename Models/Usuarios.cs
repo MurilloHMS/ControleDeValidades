@@ -14,6 +14,7 @@ namespace ControleDeValidades.Models
         public string? Email { get; set; }
         [Required(ErrorMessage = "A Senha é Obrigatória")]
         public string Senha { get; set; }
+        public char Ativo { get; set; }
 
         
         public void Incluir()

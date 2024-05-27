@@ -20,28 +20,42 @@ namespace ControleDeValidades
             produtoToolStripMenuItem1.Enabled = valor;
             importarXMLToolStripMenuItem1.Enabled = valor;
             filtroProdutosToolStripMenuItem.Enabled = valor;
+            desconectarToolStripMenuItem.Enabled = valor;
+            usuáriosToolStripMenuItem.Enabled = valor;
+
+            switch (valor)
+            {
+                case true:
+                    loginSistemaToolStripMenuItem.Enabled = false;
+                    break;
+                case false:
+                    loginSistemaToolStripMenuItem.Enabled = true;
+                    break;
+            }
 
         }
 
         public void ConectarNoSistema()
         {
+
             Frm_Login frm_Login = new Frm_Login();
             frm_Login.ShowDialog();
+            var validacao = new Validacao();
 
             if (frm_Login.DialogResult == DialogResult.OK)
             {
                 string senha = frm_Login.senha;
                 string usuario = frm_Login.login;
 
-                if (Validacao.ValidaSenhaLogin(usuario, senha))
+                if (validacao.ValidaSenhaLogin(usuario, senha))
                 {
                     alteraOpcoes(true);
-                    MessageBox.Show("Login Efetuado com sucesso!", "Autenticação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show($"{validacao.mensagem}", "Autenticação", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
                 else
                 {
-                    MessageBox.Show("Senha Inválida!", "Autenticação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show($"{validacao.mensagem}", "Autenticação", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }
@@ -71,6 +85,7 @@ namespace ControleDeValidades
             Frm_CadastroUsuarios_UC cadastroUsuarios_UC = new Frm_CadastroUsuarios_UC();
             Frm_DefaultWindows frm = new Frm_DefaultWindows(cadastroUsuarios_UC, "CadastroUsuarios", "Cadastro de Usuários");
             frm.MdiParent = this;
+            cadastroUsuarios_UC._menuStrip = menuStrip1;
             frm.Show();
         }
 
@@ -80,6 +95,11 @@ namespace ControleDeValidades
             Frm_DefaultWindows frm = new Frm_DefaultWindows(cadastroDeProduto_UC, "CadastroProdutos", "Cadastro de Produtos");
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 

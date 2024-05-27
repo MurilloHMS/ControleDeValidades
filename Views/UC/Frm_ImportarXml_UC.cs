@@ -75,13 +75,11 @@ namespace ControleDeValidades.Views.UC
 
             if (msg == DialogResult.Yes)
             {
-                // Verificar se todas as linhas selecionadas têm a coluna "Validades" preenchida
                 foreach (DataGridViewRow row in Dgv_DadosXML.Rows)
                 {
                     DataGridViewCheckBoxCell checkBox = row.Cells[0] as DataGridViewCheckBoxCell;
                     if (Convert.ToBoolean(checkBox.Value) == true)
                     {
-                        // Verificar se a célula da coluna "Validades" está preenchida
                         if (row.Cells["Validades"].Value == null || string.IsNullOrWhiteSpace(row.Cells["Validades"].Value.ToString()))
                         {
                             MessageBox.Show("A coluna 'Validades' deve estar preenchida para todos os produtos selecionados.", "Erro de validação", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -90,7 +88,6 @@ namespace ControleDeValidades.Views.UC
                     }
                 }
 
-                // Se todas as colunas "Validades" estiverem preenchidas, prosseguir com a inclusão
                 foreach (DataGridViewRow row in Dgv_DadosXML.Rows)
                 {
                     DataGridViewCheckBoxCell checkBox = row.Cells[0] as DataGridViewCheckBoxCell;

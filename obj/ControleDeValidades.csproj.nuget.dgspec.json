@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj": {}
+    "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj": {}
   },
   "projects": {
-    "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj": {
+    "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj",
+        "projectUniqueName": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj",
         "projectName": "ControleDeValidades",
-        "projectPath": "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj",
+        "projectPath": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\ControleDeValidades.csproj",
         "packagesPath": "C:\\Users\\murillo\\.nuget\\packages\\",
-        "outputPath": "A:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\obj\\",
+        "outputPath": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\murillo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -103,7 +103,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
