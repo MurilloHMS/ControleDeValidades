@@ -54,6 +54,7 @@
             Txt_Senha.PlaceholderText = "Senha";
             Txt_Senha.Size = new Size(196, 23);
             Txt_Senha.TabIndex = 12;
+            Txt_Senha.KeyDown += Txt_Senha_KeyDown;
             // 
             // Txt_Usuario
             // 

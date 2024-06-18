@@ -24,7 +24,7 @@ namespace ControleDeValidades.Views
             senha = Txt_Senha.Text;
             login = Txt_Usuario.Text;
         }
-        
+
         private void AutoCompleteNome()
         {
             var colecaoAutoCompletar = new AutoCompleteStringCollection();
@@ -33,7 +33,7 @@ namespace ControleDeValidades.Views
                 var usuarios = _usuarios.RetornaUsuarios();
                 if (usuarios is not null)
                 {
-                    foreach(var item in usuarios)
+                    foreach (var item in usuarios)
                     {
                         colecaoAutoCompletar.Add(item.Nome.Trim());
                         colecaoAutoCompletar.Add(item.Email.Trim());
@@ -52,6 +52,19 @@ namespace ControleDeValidades.Views
             {
                 MessageBox.Show($"Ocorreu um erro ao coletar os dados! \nErro: {ex.Message}");
             }
+        }
+
+        private void Txt_Senha_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if(!string.IsNullOrWhiteSpace(Txt_Usuario.Text) && !string.IsNullOrWhiteSpace(Txt_Senha.Text))
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    button1.PerformClick();
+                }
+            }
+            
         }
     }
 }

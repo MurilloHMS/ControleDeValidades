@@ -11,10 +11,11 @@ namespace ControleDeValidades.Models
     public class MenuAcessos
     {
         [Key]
+        public int ID {  get; set; }
+        [Key]
         public int Id_Usuario {  get; set; }
         [Key]
         public string Id_Opcao { get; set; }
-        public char Liberado { get; set; }
-        public int ID {  get; set; }
+        public char Liberado { get; set; } = 'F';
     }
 }

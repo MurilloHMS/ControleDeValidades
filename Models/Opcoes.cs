@@ -64,5 +64,11 @@ namespace ControleDeValidades.Models
             return hashSetOpcoes;
         }
 
+        public IEnumerable<Opcoes> RetornaOpcoes()
+        {
+            var dal = new DAL<Opcoes>();
+            return dal.ObterRegistros();
+        }
+
     }
 }

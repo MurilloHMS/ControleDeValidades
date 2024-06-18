@@ -10,14 +10,14 @@ namespace ControleDeValidades.Models
             Usuarios usuarios = new Usuarios();
             Usuarios dados = ValidaUsuario(usuario);
 
-            if (dados != null && dados.Ativo == 'Y' && ValidaCredenciais(usuario, senha, dados))
+            if (dados != null && dados.Ativo == 'T' && ValidaCredenciais(usuario, senha, dados))
             {
                 mensagem = "Login Efetuado com Sucesso!";
                 return true;
             }
             else
             {
-                mensagem = dados != null && dados.Ativo == 'Y' ? "Senha Incorreta!" : "Usuário Inativo";
+                mensagem = dados != null && dados.Ativo == 'T' ? "Senha Incorreta!" : "Usuário Inativo";
                 return false;
             }
 
@@ -27,7 +27,7 @@ namespace ControleDeValidades.Models
         private Usuarios ValidaUsuario(string usuario)
         {
             Usuarios usuarios = new Usuarios();
-            return ValidaEmail(usuario) ? usuarios.BuscaEmail(usuario) : usuarios.BuscaUsuario(usuario);
+            return ValidaEmail(usuario) ? usuarios.BuscaEmail(usuario) : usuarios.BuscaUsuarioPorNome(usuario);
         }
 
         private bool ValidaCredenciais(string usuario, string senha, Usuarios dados)

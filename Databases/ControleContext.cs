@@ -14,6 +14,7 @@ namespace ControleDeValidades.Databases
         public DbSet<Produto> Produtos {  get; set; }
         public DbSet<Usuarios> Usuarios { get; set; }
         public DbSet<Opcoes> Opcoes { get; set; }
+        public DbSet<MenuAcessos> menuAcessos { get; set; }
 
         public ControleContext()
         {
@@ -23,14 +24,13 @@ namespace ControleDeValidades.Databases
                 Directory.CreateDirectory(dbDiretorio);
             }
 
-            string PathArquivo = Path.Combine(dbDiretorio, "ControleDeValidades.mdf");
-  
-            _connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={PathArquivo};Initial Catalog=ControleDeValidades;Integrated Security=True;Connect Timeout=30";
+            string PathArquivo = Path.Combine(dbDiretorio, "ControleDeValidades.db");
+
+            //_connectionString = $@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename={PathArquivo};Initial Catalog=ControleDeValidades;Integrated Security=True;Connect Timeout=30";
+            _connectionString = $"Data Source = {PathArquivo};Cache=Shared";        
         }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(_connectionString).UseLazyLoadingProxies();
-        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) => optionsBuilder.UseSqlite(_connectionString).UseLazyLoadingProxies();
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

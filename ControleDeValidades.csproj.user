@@ -4,7 +4,13 @@
     <_LastSelectedProfileId>A:\Projetos\Profissionais\primulla\ControleDeValidades\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="Views\CadastroProdutos.cs">
+    <Compile Update="Views\Frm_AcessosUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Frm_CadastroUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Frm_Busca.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Frm_DefaultWindows.cs">
