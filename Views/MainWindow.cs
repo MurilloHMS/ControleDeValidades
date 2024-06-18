@@ -6,32 +6,55 @@ namespace ControleDeValidades
 {
     public partial class MainWindow : Form
     {
+        private int IdUsuario;
         public MainWindow()
         {
             InitializeComponent();
+        }
 
-            alteraOpcoes(false);
+        private void alteraOpcoes()
+        {
+            MenuAcessos acessos = new MenuAcessos();
+            IEnumerable<MenuAcessos> menu = acessos.RetornaAcessosPorUsuario(IdUsuario);
+            IEnumerable<char> valores = menu.Select(x => x.Liberado);
+
+            List<ToolStripMenuItem> menuItems = new List<ToolStripMenuItem>
+            {
+                produtoToolStripMenuItem1,
+                desconectarToolStripMenuItem,
+                importarXMLToolStripMenuItem1,
+                usuáriosToolStripMenuItem,
+                filtroProdutosToolStripMenuItem
+            };
+
+            int index = 0;
+            foreach (var valor in valores)
+            {
+                
+                if (index < menuItems.Count -1)
+                {
+                    
+                    bool isEnabled = CharToBool(valor);
+                    menuItems[index].Enabled = isEnabled; 
+                    index++;
+                }
+            }
+
+            //switch (valor)
+            //{
+            //    case true:
+            //        loginSistemaToolStripMenuItem.Enabled = false;
+            //        break;
+            //    case false:
+            //        loginSistemaToolStripMenuItem.Enabled = true;
+            //        break;
+            //}
 
         }
 
-        private void alteraOpcoes(bool valor)
+        public bool CharToBool(char valor)
         {
-            produtoToolStripMenuItem1.Enabled = valor;
-            importarXMLToolStripMenuItem1.Enabled = valor;
-            filtroProdutosToolStripMenuItem.Enabled = valor;
-            desconectarToolStripMenuItem.Enabled = valor;
-            usuáriosToolStripMenuItem.Enabled = valor;
-
-            switch (valor)
-            {
-                case true:
-                    loginSistemaToolStripMenuItem.Enabled = false;
-                    break;
-                case false:
-                    loginSistemaToolStripMenuItem.Enabled = true;
-                    break;
-            }
-
+            return valor == 'T';
         }
 
         public void ConectarNoSistema()
@@ -44,12 +67,13 @@ namespace ControleDeValidades
             if (frm_Login.DialogResult == DialogResult.OK)
             {
                 string senha = frm_Login.senha;
-                string usuario = frm_Login.login;
+                string usuario = frm_Login.login; 
                 
 
                 if (validacao.ValidaSenhaLogin(usuario, senha))
                 {
-                    alteraOpcoes(true);
+                    IdUsuario = validacao.IdUsuario;
+                    alteraOpcoes();
                     MessageBox.Show($"{validacao.mensagem}", "Autenticação", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LabelMenu.Text += usuario;
                 }

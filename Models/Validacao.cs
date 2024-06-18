@@ -5,10 +5,12 @@ namespace ControleDeValidades.Models
     public class Validacao
     {
         public string mensagem;
+        public int IdUsuario;
         public bool ValidaSenhaLogin(string usuario, string senha)
         {
             Usuarios usuarios = new Usuarios();
             Usuarios dados = ValidaUsuario(usuario);
+            IdUsuario = dados.ID;
 
             if (dados != null && dados.Ativo == 'T' && ValidaCredenciais(usuario, senha, dados))
             {

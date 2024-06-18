@@ -26,8 +26,8 @@ namespace ControleDeValidades.Migrations
                     b.Property<int>("Id_Usuario")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Id_Opcao")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("Id_Opcao")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int>("ID")
                         .HasColumnType("INTEGER");

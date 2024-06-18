@@ -45,7 +45,7 @@
             groupBox2 = new GroupBox();
             Btn_Acessos = new Button();
             Btn_Excluir = new Button();
-            Btn_Cadastro = new Button();
+            Btn_Register = new Button();
             label14 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -181,7 +181,7 @@
             // 
             groupBox2.Controls.Add(Btn_Acessos);
             groupBox2.Controls.Add(Btn_Excluir);
-            groupBox2.Controls.Add(Btn_Cadastro);
+            groupBox2.Controls.Add(Btn_Register);
             groupBox2.Location = new Point(12, 328);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(402, 46);
@@ -210,13 +210,13 @@
             // 
             // Btn_Cadastro
             // 
-            Btn_Cadastro.Location = new Point(6, 17);
-            Btn_Cadastro.Name = "Btn_Cadastro";
-            Btn_Cadastro.Size = new Size(119, 23);
-            Btn_Cadastro.TabIndex = 7;
-            Btn_Cadastro.Text = "Cadastrar";
-            Btn_Cadastro.UseVisualStyleBackColor = true;
-            Btn_Cadastro.Click += Btn_Cadastro_Click;
+            Btn_Register.Location = new Point(6, 17);
+            Btn_Register.Name = "Btn_Cadastro";
+            Btn_Register.Size = new Size(119, 23);
+            Btn_Register.TabIndex = 7;
+            Btn_Register.Text = "Cadastrar";
+            Btn_Register.UseVisualStyleBackColor = true;
+            Btn_Register.Click += Btn_Cadastro_Click;
             // 
             // label14
             // 
@@ -268,7 +268,7 @@
         private GroupBox groupBox2;
         private Button Btn_Acessos;
         private Button Btn_Excluir;
-        private Button Btn_Cadastro;
+        private Button Btn_Register;
         private Label label14;
     }
 }

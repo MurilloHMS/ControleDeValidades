@@ -8,37 +8,41 @@ namespace ControleDeValidades.Views
         public Frm_CadastroUsuarios()
         {
             InitializeComponent();
+            SetupCharacterCasing();
+        }
+
+        private void SetupCharacterCasing()
+        {
             Txb_Email.CharacterCasing = CharacterCasing.Upper;
             Txb_Nome.CharacterCasing = CharacterCasing.Upper;
         }
 
         private void Btn_Cadastro_Click(object sender, EventArgs e)
         {
-            if (Txt_ID.Enabled == false && Btn_Cadastro.Text == "Cadastrar")
+            if (Btn_Register.Text == "Cadastrar")
             {
-                CadastrarUsuario();
+                RegisterUser();
             }
             else
             {
-                AtualizarCadastro();
+                UpdateUser();
             }
         }
-        private void AtualizarCadastro()
+        private void UpdateUser()
         {
             try
             {
-                Usuarios users = new Usuarios();
-                users = ColetaDados(true);
+                var users = CollectData(true);
                 users.ValidaClasse();
                 users.Atualizar();
                 MessageBox.Show("Usuário atualizado com Sucesso");
-                LimparDados();
-                AtualizarElementos(true);
+                ResetForm();
+                SetFormMode(true);
 
             }
             catch (ValidationException ex)
             {
-                MessageBox.Show($"{ex.Message}", "Validação cadastro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show($"{ex.Message}", "Validação atualizaçao", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
             catch (Exception ex)
@@ -46,17 +50,17 @@ namespace ControleDeValidades.Views
                 MessageBox.Show($"{ex.Message}", "Erro cadastro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        private void CadastrarUsuario()
+        private void RegisterUser()
         {
             try
             {
-                Usuarios users = new Usuarios();
-                users = ColetaDados(false);
+                
+                var users = CollectData(false);
                 users.ValidaClasse();
                 users.Incluir();
                 MessageBox.Show("Usuário Incluido com Sucesso");
-                LimparDados();
-                AtualizarElementos(false);
+                ResetForm();
+                SetFormMode(false);
 
             }
             catch (ValidationException ex)
@@ -70,31 +74,28 @@ namespace ControleDeValidades.Views
             }
         }
 
-        private Usuarios ColetaDados(bool i)
+        private Usuarios CollectData(bool isUpdate)
         {
-            Usuarios users = new Usuarios();
-            if (i)
+            return new Usuarios
             {
-                users.ID = int.Parse(Txt_ID.Text);
-            }
-            users.Nome = Txb_Nome.Text;
-            users.Senha = Txb_Senha.Text;
-            users.Email = Txb_Email.Text;
-            users.Ativo = Cb_Ativo.SelectedIndex == 0 ? 'T' : 'F';
-            return users;
+                ID = isUpdate && int.TryParse(Txt_ID.Text, out int id) ? id : 0,
+                Nome = Txb_Nome.Text,
+                Senha = Txb_Senha.Text,
+                Email = Txb_Email.Text,
+                Ativo = Cb_Ativo.SelectedIndex == 0 ? 'T' : 'F'
+            };
         }
 
-        private void PreencherUsuario(int id, string nome, string email, string senha, char ativo)
+        private void FillUser(int id, string nome, string email, string senha, char ativo)
         {
-            Txt_ID.Text = Convert.ToString(id);
+            Txt_ID.Text = id.ToString();
             Txb_Nome.Text = nome;
             Txb_Senha.Text = senha;
             Txb_Email.Text = email;
-
             Cb_Ativo.SelectedIndex = ativo == 'T' ? 0 : 1;
         }
 
-        private void LimparDados()
+        private void ResetForm()
         {
             Txt_ID.Text = string.Empty;
             Txb_Nome.Text = string.Empty;
@@ -102,7 +103,7 @@ namespace ControleDeValidades.Views
             Txb_Email.Text = string.Empty;
         }
 
-        private void BuscarUsuario()
+        private void SearchUser()
         {
             Frm_Busca finder = new Frm_Busca();
             finder.ShowDialog();
@@ -115,8 +116,8 @@ namespace ControleDeValidades.Views
 
             if (finder.DialogResult == DialogResult.OK)
             {
-                PreencherUsuario(id, nome, email, senha, ativo);
-                AtualizarElementos(true);
+                FillUser(id, nome, email, senha, ativo);
+                SetFormMode(true);
             }
         }
 
@@ -127,7 +128,7 @@ namespace ControleDeValidades.Views
 
         private void Btn_BuscarUsuario_Click(object sender, EventArgs e)
         {
-            BuscarUsuario();
+            SearchUser();
         }
 
         private void Btn_Cancelar_Click(object sender, EventArgs e)
@@ -137,11 +138,10 @@ namespace ControleDeValidades.Views
                 DialogResult msg = MessageBox.Show($"Atenção, Essa Opção excluirá o usuário {Txb_Nome.Text}.\n Tem certeza que deseja excluir? \n Essa operação é irreversivel", "Exclusão de usuários", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (msg is DialogResult.Yes) 
                 {
-                    int id = int.Parse(Txt_ID.Text);
-                    Usuarios resultado = new Usuarios();
-                    resultado = ColetaDados(true);
+                    
+                    var resultado = CollectData(true);
                     resultado.Deletar();
-                    LimparDados();
+                    ResetForm();
 
                 }
             }
@@ -159,9 +159,9 @@ namespace ControleDeValidades.Views
 
         }
 
-        private void AtualizarElementos(bool valor)
+        private void SetFormMode(bool valor)
         {
-            Btn_Cadastro.Text = valor == true ? "Atualizar" : "Cadastrar";
+            Btn_Register.Text = valor == true ? "Atualizar" : "Cadastrar";
         }
 
         

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\frm_cadastrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_cadastrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\frm_cadastrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_cadastrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\models\\menuacessos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:models\\menuacessos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\frm_cadastrousuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_cadastrousuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\models\\validacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:models\\validacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +25,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 279,
+          "DockedWidth": 420,
           "SelectedChildIndex": 2,
           "Children": [
             {
@@ -30,45 +34,68 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:938763789:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+              "Name": "ST:1107064968:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Frm_CadastroUsuarios.cs",
-              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_CadastroUsuarios.cs",
-              "RelativeDocumentMoniker": "Views\\Frm_CadastroUsuarios.cs",
-              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_CadastroUsuarios.cs",
-              "RelativeToolTip": "Views\\Frm_CadastroUsuarios.cs",
-              "ViewState": "AQIAAGoAAAAAAAAAAAASwI8AAAAiAAAA",
+              "Title": "MainWindow.cs",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\MainWindow.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\MainWindow.cs",
+              "RelativeToolTip": "Views\\MainWindow.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAvwE0AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T19:18:10.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Frm_CadastroUsuarios.Designer.cs",
-              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_CadastroUsuarios.Designer.cs",
-              "RelativeDocumentMoniker": "Views\\Frm_CadastroUsuarios.Designer.cs",
-              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_CadastroUsuarios.Designer.cs",
-              "RelativeToolTip": "Views\\Frm_CadastroUsuarios.Designer.cs",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAlwIgAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T20:03:06.536Z",
+              "WhenOpened": "2024-06-18T22:27:18.228Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Frm_CadastroUsuarios.cs [Design]",
-              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_CadastroUsuarios.cs",
-              "RelativeDocumentMoniker": "Views\\Frm_CadastroUsuarios.cs",
-              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_CadastroUsuarios.cs [Design]",
-              "RelativeToolTip": "Views\\Frm_CadastroUsuarios.cs [Design]",
+              "Title": "MenuAcessos.cs",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Models\\MenuAcessos.cs",
+              "RelativeDocumentMoniker": "Models\\MenuAcessos.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Models\\MenuAcessos.cs",
+              "RelativeToolTip": "Models\\MenuAcessos.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAvwCQAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T17:44:52.244Z",
+              "WhenOpened": "2024-06-18T22:33:21.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.cs [Design]",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\MainWindow.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\MainWindow.cs [Design]",
+              "RelativeToolTip": "Views\\MainWindow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T22:27:15.919Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Validacao.cs",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Models\\Validacao.cs",
+              "RelativeDocumentMoniker": "Models\\Validacao.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Models\\Validacao.cs",
+              "RelativeToolTip": "Models\\Validacao.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T22:40:32.425Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 294,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f37f5141-198e-4181-9582-7b026ee8f915}"
             }
           ]
         }

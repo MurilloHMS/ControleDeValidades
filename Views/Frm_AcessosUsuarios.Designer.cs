@@ -95,6 +95,7 @@
             Btn_Cadastro.TabIndex = 8;
             Btn_Cadastro.Text = "Cadastrar";
             Btn_Cadastro.UseVisualStyleBackColor = true;
+            Btn_Cadastro.Click += Btn_Cadastro_Click;
             // 
             // groupBox1
             // 

@@ -1,8 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ControleDeValidades.Models;
-using System.Data.SqlClient;
-using Microsoft.EntityFrameworkCore.Internal;
-using System.Windows.Forms;
 
 namespace ControleDeValidades.Databases
 {
