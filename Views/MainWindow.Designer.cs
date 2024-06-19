@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ToolStripMenuItem filtroProdutosToolStripMenuItem;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
+            filtroProdutosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1 = new MenuStrip();
             opçõesToolStripMenuItem = new ToolStripMenuItem();
             loginSistemaToolStripMenuItem = new ToolStripMenuItem();
@@ -41,10 +41,18 @@
             janelasToolStripMenuItem1 = new ToolStripMenuItem();
             statusStrip1 = new StatusStrip();
             LabelMenu = new ToolStripStatusLabel();
-            filtroProdutosToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             statusStrip1.SuspendLayout();
             SuspendLayout();
+            // 
+            // filtroProdutosToolStripMenuItem
+            // 
+            filtroProdutosToolStripMenuItem.Enabled = false;
+            filtroProdutosToolStripMenuItem.Image = Properties.Resources.Search_Property;
+            filtroProdutosToolStripMenuItem.Name = "filtroProdutosToolStripMenuItem";
+            filtroProdutosToolStripMenuItem.Size = new Size(180, 22);
+            filtroProdutosToolStripMenuItem.Text = "Filtro Produtos";
+            filtroProdutosToolStripMenuItem.Click += filtroProdutosToolStripMenuItem_Click;
             // 
             // menuStrip1
             // 
@@ -77,6 +85,7 @@
             desconectarToolStripMenuItem.Name = "desconectarToolStripMenuItem";
             desconectarToolStripMenuItem.Size = new Size(180, 22);
             desconectarToolStripMenuItem.Text = "Desconectar";
+            desconectarToolStripMenuItem.Click += desconectarToolStripMenuItem_Click;
             // 
             // cadastrosToolStripMenuItem
             // 
@@ -90,7 +99,7 @@
             produtoToolStripMenuItem1.Enabled = false;
             produtoToolStripMenuItem1.Image = Properties.Resources.New_Product_1;
             produtoToolStripMenuItem1.Name = "produtoToolStripMenuItem1";
-            produtoToolStripMenuItem1.Size = new Size(180, 22);
+            produtoToolStripMenuItem1.Size = new Size(147, 22);
             produtoToolStripMenuItem1.Text = "Produto";
             produtoToolStripMenuItem1.Click += produtoToolStripMenuItem1_Click;
             // 
@@ -99,7 +108,7 @@
             importarXMLToolStripMenuItem1.Enabled = false;
             importarXMLToolStripMenuItem1.Image = Properties.Resources.XML_Transformer_1;
             importarXMLToolStripMenuItem1.Name = "importarXMLToolStripMenuItem1";
-            importarXMLToolStripMenuItem1.Size = new Size(180, 22);
+            importarXMLToolStripMenuItem1.Size = new Size(147, 22);
             importarXMLToolStripMenuItem1.Text = "Importar XML";
             importarXMLToolStripMenuItem1.Click += importarXMLToolStripMenuItem1_Click;
             // 
@@ -108,7 +117,7 @@
             usuáriosToolStripMenuItem.Enabled = false;
             usuáriosToolStripMenuItem.Image = Properties.Resources.Add_User_Group_Woman_Man;
             usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            usuáriosToolStripMenuItem.Size = new Size(180, 22);
+            usuáriosToolStripMenuItem.Size = new Size(147, 22);
             usuáriosToolStripMenuItem.Text = "Usuários";
             usuáriosToolStripMenuItem.Click += usuáriosToolStripMenuItem_Click;
             // 
@@ -118,15 +127,6 @@
             janelasToolStripMenuItem1.Name = "janelasToolStripMenuItem1";
             janelasToolStripMenuItem1.Size = new Size(56, 20);
             janelasToolStripMenuItem1.Text = "Janelas";
-            // 
-            // filtroProdutosToolStripMenuItem
-            // 
-            filtroProdutosToolStripMenuItem.Enabled = false;
-            filtroProdutosToolStripMenuItem.Image = Properties.Resources.Search_Property;
-            filtroProdutosToolStripMenuItem.Name = "filtroProdutosToolStripMenuItem";
-            filtroProdutosToolStripMenuItem.Size = new Size(180, 22);
-            filtroProdutosToolStripMenuItem.Text = "Filtro Produtos";
-            filtroProdutosToolStripMenuItem.Click += filtroProdutosToolStripMenuItem_Click;
             // 
             // statusStrip1
             // 

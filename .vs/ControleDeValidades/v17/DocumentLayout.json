@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\frm_acessosusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_acessosusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\models\\menuacessos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:models\\menuacessos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\models\\validacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:models\\validacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\frm_acessosusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_acessosusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,58 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.cs",
-              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\MainWindow.cs",
-              "RelativeDocumentMoniker": "Views\\MainWindow.cs",
-              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\MainWindow.cs",
-              "RelativeToolTip": "Views\\MainWindow.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAvwE0AAAAUAAAA",
+              "Title": "Frm_AcessosUsuarios.cs",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_AcessosUsuarios.cs",
+              "RelativeDocumentMoniker": "Views\\Frm_AcessosUsuarios.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_AcessosUsuarios.cs",
+              "RelativeToolTip": "Views\\Frm_AcessosUsuarios.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAiwIwAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T22:27:18.228Z",
+              "WhenOpened": "2024-06-19T01:12:10.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MenuAcessos.cs",
-              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Models\\MenuAcessos.cs",
-              "RelativeDocumentMoniker": "Models\\MenuAcessos.cs",
-              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Models\\MenuAcessos.cs",
-              "RelativeToolTip": "Models\\MenuAcessos.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAvwCQAAAA2AAAA",
+              "Title": "Frm_AcessosUsuarios.cs [Design]",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_AcessosUsuarios.cs",
+              "RelativeDocumentMoniker": "Views\\Frm_AcessosUsuarios.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_AcessosUsuarios.cs [Design]",
+              "RelativeToolTip": "Views\\Frm_AcessosUsuarios.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T22:33:21.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.cs [Design]",
-              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\MainWindow.cs",
-              "RelativeDocumentMoniker": "Views\\MainWindow.cs",
-              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\MainWindow.cs [Design]",
-              "RelativeToolTip": "Views\\MainWindow.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T22:27:15.919Z",
+              "WhenOpened": "2024-06-19T01:12:08.607Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Validacao.cs",
-              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Models\\Validacao.cs",
-              "RelativeDocumentMoniker": "Models\\Validacao.cs",
-              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Models\\Validacao.cs",
-              "RelativeToolTip": "Models\\Validacao.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T22:40:32.425Z",
-              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 294,
+          "DockedWidth": 420,
           "SelectedChildIndex": -1,
           "Children": [
             {

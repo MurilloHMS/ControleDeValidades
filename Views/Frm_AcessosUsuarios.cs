@@ -43,11 +43,6 @@ namespace ControleDeValidades.Views
             }
         }
 
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Frm_AcessosUsuarios_Load(object sender, EventArgs e)
         {
             Opcoes opcoes = new Opcoes();
@@ -64,7 +59,44 @@ namespace ControleDeValidades.Views
             dataGridView1.Columns["Descricao"].ReadOnly = true;
             dataGridView1.Columns["Nivel"].ReadOnly = true;
 
+            GetOptions();
 
+        }
+
+        private void GetOptions() 
+        {
+            MenuAcessos acessos = new MenuAcessos();
+            IEnumerable<MenuAcessos> menu = acessos.RetornaAcessosPorUsuario(int.Parse(IdUsuario));
+
+            if (menu.Any()) 
+            {
+                // Itera sobre as linhas da DataGridView1
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    // Verifica se há um item correspondente na lista menu
+                    if (row.Index < menu.Count())
+                    {
+                        // Obtém o valor booleano do atributo Liberado de menu
+                        char isEnabledChar = menu.ElementAt(row.Index).Liberado;
+                        bool isEnabled = CharToBool(isEnabledChar);
+
+                        // Acessa a célula "Liberado" na linha atual
+                        DataGridViewCheckBoxCell liberadoCell = row.Cells["Liberado"] as DataGridViewCheckBoxCell;
+
+                        // Marca/desmarca a checkbox conforme o valor
+                        liberadoCell.Value = isEnabled;
+                    }
+                }
+
+                SetFormMode(true);
+            }
+
+            
+        }
+
+        public bool CharToBool(char valor)
+        {
+            return valor == 'T';
         }
 
         private void RegisterOptions()
@@ -81,10 +113,46 @@ namespace ControleDeValidades.Views
             }
         }
 
+        private void UpdateOptions()
+        {
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                MenuAcessos acessos = new MenuAcessos();
+                DataGridViewCheckBoxCell checkBox = row.Cells[4] as DataGridViewCheckBoxCell;
+                acessos.Id_Opcao = int.Parse(row.Cells["Id"].Value.ToString());
+                acessos.Id_Usuario = int.Parse(Txb_ID.Text);
+                acessos.Liberado = Convert.ToBoolean(checkBox.Value) == true ? 'T' : 'F';
+                acessos.Atualizar();
+
+            }
+        }
+
         private void Btn_Cadastro_Click(object sender, EventArgs e)
         {
-            RegisterOptions();
-            MessageBox.Show("Test");
+            if(Btn_Cadastro.Text == "Cadastro")
+            {
+                RegisterOptions();
+                MessageBox.Show($"Opções de usuário incluidas com sucesso para o usuario: {Txb_Nome.Text}");
+                this.Close();
+            }
+            else
+            {
+                UpdateOptions();
+                MessageBox.Show($"Opções de usuário atualizadas com sucesso para o usuario: {Txb_Nome.Text}");
+                this.Close();
+            }
+
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void SetFormMode(bool valor)
+        {
+            Btn_Cadastro.Text = valor == true ? "Atualizar" : "Cadastrar";
         }
     }
 }

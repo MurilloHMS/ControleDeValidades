@@ -65,14 +65,14 @@ namespace ControleDeValidades.Databases
                         Nome = "Admin",
                         Email = "admin@outlook.com",
                         Senha = "Admin",
-                        Ativo = Convert.ToChar("Y")
+                        Ativo = 'T'
                     },
                     new Usuarios
                     {
                         Nome = "Suporte",
                         Email = "Suporte@Outlook.com",
                         Senha = "Xj7hpmtmma@",
-                        Ativo = Convert.ToChar("Y")
+                        Ativo = 'T'
                     }
                 );
                 SaveChanges();
@@ -126,6 +126,63 @@ namespace ControleDeValidades.Databases
                 );
                 SaveChanges();
             }
+
+            if (!menuAcessos.Any()) 
+            {
+                menuAcessos.AddRange(
+                    new MenuAcessos 
+                    {
+                        Id_Usuario = 1,
+                        Id_Opcao = 1,
+                        ID = 1,
+                        Liberado = 'T'
+
+                    },
+                    new MenuAcessos
+                    {
+                        Id_Usuario = 1,
+                        Id_Opcao = 2,
+                        ID = 1,
+                        Liberado = 'T'
+
+                    },
+                    new MenuAcessos
+                    {
+                        Id_Usuario = 1,
+                        Id_Opcao = 3,
+                        ID = 1,
+                        Liberado = 'T'
+
+                    },
+                    new MenuAcessos
+                    {
+                        Id_Usuario = 1,
+                        Id_Opcao = 4,
+                        ID = 1,
+                        Liberado = 'T'
+
+                    },
+                    new MenuAcessos
+                    {
+                        Id_Usuario = 1,
+                        Id_Opcao = 5,
+                        ID = 1,
+                        Liberado = 'T'
+
+                    },
+                    new MenuAcessos
+                    {
+                        Id_Usuario = 1,
+                        Id_Opcao = 6,
+                        ID = 1,
+                        Liberado = 'T'
+
+                    }
+
+                );
+                SaveChanges();
+            }
+
 
         }
     }

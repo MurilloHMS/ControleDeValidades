@@ -22,6 +22,7 @@ namespace ControleDeValidades.Views
             if (Btn_Register.Text == "Cadastrar")
             {
                 RegisterUser();
+                
             }
             else
             {
@@ -59,8 +60,13 @@ namespace ControleDeValidades.Views
                 users.ValidaClasse();
                 users.Incluir();
                 MessageBox.Show("Usuário Incluido com Sucesso");
+                Usuarios u = new Usuarios();
+                var retorno = u.BuscaUsuarioPorNome(users.Nome);
+                Txt_ID.Text = retorno.ID.ToString();
+                Btn_Acessos.PerformClick();
                 ResetForm();
                 SetFormMode(false);
+                
 
             }
             catch (ValidationException ex)
@@ -142,6 +148,7 @@ namespace ControleDeValidades.Views
                     var resultado = CollectData(true);
                     resultado.Deletar();
                     ResetForm();
+                    SetFormMode(false);
 
                 }
             }

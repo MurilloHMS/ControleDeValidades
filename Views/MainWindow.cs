@@ -12,45 +12,7 @@ namespace ControleDeValidades
             InitializeComponent();
         }
 
-        private void alteraOpcoes()
-        {
-            MenuAcessos acessos = new MenuAcessos();
-            IEnumerable<MenuAcessos> menu = acessos.RetornaAcessosPorUsuario(IdUsuario);
-            IEnumerable<char> valores = menu.Select(x => x.Liberado);
 
-            List<ToolStripMenuItem> menuItems = new List<ToolStripMenuItem>
-            {
-                produtoToolStripMenuItem1,
-                desconectarToolStripMenuItem,
-                importarXMLToolStripMenuItem1,
-                usuáriosToolStripMenuItem,
-                filtroProdutosToolStripMenuItem
-            };
-
-            int index = 0;
-            foreach (var valor in valores)
-            {
-                
-                if (index < menuItems.Count -1)
-                {
-                    
-                    bool isEnabled = CharToBool(valor);
-                    menuItems[index].Enabled = isEnabled; 
-                    index++;
-                }
-            }
-
-            //switch (valor)
-            //{
-            //    case true:
-            //        loginSistemaToolStripMenuItem.Enabled = false;
-            //        break;
-            //    case false:
-            //        loginSistemaToolStripMenuItem.Enabled = true;
-            //        break;
-            //}
-
-        }
 
         public bool CharToBool(char valor)
         {
@@ -67,8 +29,8 @@ namespace ControleDeValidades
             if (frm_Login.DialogResult == DialogResult.OK)
             {
                 string senha = frm_Login.senha;
-                string usuario = frm_Login.login; 
-                
+                string usuario = frm_Login.login;
+
 
                 if (validacao.ValidaSenhaLogin(usuario, senha))
                 {
@@ -83,6 +45,37 @@ namespace ControleDeValidades
                 }
             }
         }
+
+        private void alteraOpcoes()
+        {
+            MenuAcessos acessos = new MenuAcessos();
+            IEnumerable<MenuAcessos> menu = acessos.RetornaAcessosPorUsuario(IdUsuario);
+            IEnumerable<char> valores = menu.Select(x => x.Liberado);
+
+            List<ToolStripMenuItem> menuItems = new List<ToolStripMenuItem>
+            {
+                loginSistemaToolStripMenuItem,
+                desconectarToolStripMenuItem,
+                produtoToolStripMenuItem1,
+                importarXMLToolStripMenuItem1,
+                usuáriosToolStripMenuItem,
+                filtroProdutosToolStripMenuItem
+            };
+
+            int count = Math.Min(menuItems.Count, valores.Count());
+
+            for (int index = 0; index < count; index++)
+            {
+                char valor = valores.ElementAt(index); // Pegar o valor correspondente
+                bool isEnabled = CharToBool(valor); // Converter char para bool
+                menuItems[index].Enabled = isEnabled;
+
+
+            }
+
+            loginSistemaToolStripMenuItem.Enabled = false;
+        }
+
 
         private void ChamarFormulario(UserControl userControl, string nome, string texto)
         {
@@ -109,7 +102,7 @@ namespace ControleDeValidades
         {
             Frm_CadastroUsuarios cadastroUsuarios = new Frm_CadastroUsuarios();
             cadastroUsuarios.ShowDialog();
-            
+
         }
 
         private void produtoToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -117,5 +110,9 @@ namespace ControleDeValidades
             ChamarFormulario(new Frm_CadastroDeProduto_UC(), "CadastroProdutos", "Cadastro de Produtos");
         }
 
+        private void desconectarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

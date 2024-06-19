@@ -54,7 +54,6 @@
             label14.TabIndex = 2;
             label14.Text = "ACESSOS DE USUÁRIOS";
             label14.TextAlign = ContentAlignment.MiddleCenter;
-            label14.Click += label14_Click;
             // 
             // groupBox2
             // 
@@ -86,6 +85,7 @@
             button2.TabIndex = 7;
             button2.Text = "Cancelar";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Btn_Cadastro
             // 
