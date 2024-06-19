@@ -129,7 +129,7 @@ namespace ControleDeValidades.Views
 
         private void Btn_Cadastro_Click(object sender, EventArgs e)
         {
-            if(Btn_Cadastro.Text == "Cadastro")
+            if(Btn_Cadastro.Text == "Cadastrar")
             {
                 RegisterOptions();
                 MessageBox.Show($"Opções de usuário incluidas com sucesso para o usuario: {Txb_Nome.Text}");

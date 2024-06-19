@@ -208,10 +208,10 @@
             Btn_Excluir.UseVisualStyleBackColor = true;
             Btn_Excluir.Click += Btn_Cancelar_Click;
             // 
-            // Btn_Cadastro
+            // Btn_Register
             // 
             Btn_Register.Location = new Point(6, 17);
-            Btn_Register.Name = "Btn_Cadastro";
+            Btn_Register.Name = "Btn_Register";
             Btn_Register.Size = new Size(119, 23);
             Btn_Register.TabIndex = 7;
             Btn_Register.Text = "Cadastrar";
@@ -242,6 +242,7 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Frm_CadastroUsuarios";
+            ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastro de Produtos";
             groupBox1.ResumeLayout(false);

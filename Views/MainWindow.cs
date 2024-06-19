@@ -10,6 +10,7 @@ namespace ControleDeValidades
         public MainWindow()
         {
             InitializeComponent();
+            //ConectarNoSistema();
         }
 
 
@@ -113,6 +114,20 @@ namespace ControleDeValidades
         private void desconectarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+            
+
+            try
+            {
+                string logo = "Fundo.png";
+                this.BackgroundImage = Image.FromFile(logo);
+            }
+            catch (Exception ex) { }
+
+            
         }
     }
 }

@@ -100,7 +100,7 @@ namespace ControleDeValidades.Views.UC
                         produto.PROCFOR = row.Cells["Fornecedor"].Value.ToString();
                         produto.PRODDATVAL = Convert.ToDateTime(row.Cells["Validades"].Value.ToString());
                         produto.PRODDATCAD = Dtp_DataEntrada.Value;
-                        produto.PROCCODINT = row.Cells["CODINT"].Value.ToString();
+                        produto.PROCCODINT = row.Cells["CODINT"].Value?.ToString() ?? string.Empty;
                         produto.PROCNNUMNF = Txb_NumNfe.Text;
 
                         produto.Incluir();

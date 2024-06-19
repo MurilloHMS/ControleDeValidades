@@ -50,7 +50,7 @@
             filtroProdutosToolStripMenuItem.Enabled = false;
             filtroProdutosToolStripMenuItem.Image = Properties.Resources.Search_Property;
             filtroProdutosToolStripMenuItem.Name = "filtroProdutosToolStripMenuItem";
-            filtroProdutosToolStripMenuItem.Size = new Size(180, 22);
+            filtroProdutosToolStripMenuItem.Size = new Size(152, 22);
             filtroProdutosToolStripMenuItem.Text = "Filtro Produtos";
             filtroProdutosToolStripMenuItem.Click += filtroProdutosToolStripMenuItem_Click;
             // 
@@ -75,7 +75,7 @@
             // 
             loginSistemaToolStripMenuItem.Image = Properties.Resources.Connected_People;
             loginSistemaToolStripMenuItem.Name = "loginSistemaToolStripMenuItem";
-            loginSistemaToolStripMenuItem.Size = new Size(180, 22);
+            loginSistemaToolStripMenuItem.Size = new Size(148, 22);
             loginSistemaToolStripMenuItem.Text = "Login Sistema";
             loginSistemaToolStripMenuItem.Click += loginSistemaToolStripMenuItem_Click;
             // 
@@ -83,7 +83,7 @@
             // 
             desconectarToolStripMenuItem.Enabled = false;
             desconectarToolStripMenuItem.Name = "desconectarToolStripMenuItem";
-            desconectarToolStripMenuItem.Size = new Size(180, 22);
+            desconectarToolStripMenuItem.Size = new Size(148, 22);
             desconectarToolStripMenuItem.Text = "Desconectar";
             desconectarToolStripMenuItem.Click += desconectarToolStripMenuItem_Click;
             // 
@@ -148,9 +148,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1123, 754);
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
+            DoubleBuffered = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;
@@ -158,6 +160,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Controle De Validades";
             WindowState = FormWindowState.Maximized;
+            Load += MainWindow_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             statusStrip1.ResumeLayout(false);

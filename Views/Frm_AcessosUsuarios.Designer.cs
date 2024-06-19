@@ -155,6 +155,7 @@
             Controls.Add(groupBox2);
             Controls.Add(label14);
             Name = "Frm_AcessosUsuarios";
+            ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
             Load += Frm_AcessosUsuarios_Load;
             groupBox2.ResumeLayout(false);

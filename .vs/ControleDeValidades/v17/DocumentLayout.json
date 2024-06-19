@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\frm_acessosusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_acessosusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\frm_cadastrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_cadastrousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\frm_acessosusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_acessosusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\uc\\frm_importarxml_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_importarxml_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\frm_acessosusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_acessosusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,39 +34,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 420,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1402969677:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1107064968:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Frm_AcessosUsuarios.cs",
               "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_AcessosUsuarios.cs",
               "RelativeDocumentMoniker": "Views\\Frm_AcessosUsuarios.cs",
               "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_AcessosUsuarios.cs",
               "RelativeToolTip": "Views\\Frm_AcessosUsuarios.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAiwIwAAAA/AAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAjwIMAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:12:10.988Z",
+              "WhenOpened": "2024-06-19T12:12:27.257Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "Frm_ImportarXml_UC.cs",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_ImportarXml_UC.cs",
+              "RelativeDocumentMoniker": "Views\\UC\\Frm_ImportarXml_UC.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_ImportarXml_UC.cs",
+              "RelativeToolTip": "Views\\UC\\Frm_ImportarXml_UC.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAD4v2YAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T11:59:33.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Frm_AcessosUsuarios.cs [Design]",
               "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_AcessosUsuarios.cs",
               "RelativeDocumentMoniker": "Views\\Frm_AcessosUsuarios.cs",
               "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_AcessosUsuarios.cs [Design]",
               "RelativeToolTip": "Views\\Frm_AcessosUsuarios.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T01:12:08.607Z",
+              "WhenOpened": "2024-06-19T11:55:20.138Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Frm_CadastroUsuarios.cs [Design]",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_CadastroUsuarios.cs",
+              "RelativeDocumentMoniker": "Views\\Frm_CadastroUsuarios.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_CadastroUsuarios.cs [Design]",
+              "RelativeToolTip": "Views\\Frm_CadastroUsuarios.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T11:55:18.463Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.cs",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\MainWindow.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\MainWindow.cs",
+              "RelativeToolTip": "Views\\MainWindow.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAArwH0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T11:37:35.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.cs [Design]",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\MainWindow.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\MainWindow.cs [Design]",
+              "RelativeToolTip": "Views\\MainWindow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T11:35:31.788Z",
               "EditorCaption": " [Design]"
             }
           ]

@@ -2,14 +2,22 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <StartupObject>ControleDeValidades.Program</StartupObject>
+    <AssemblyName>Controle De Validades</AssemblyName>
+    <ApplicationIcon>Icons\Logo APP.ico</ApplicationIcon>
+    <SupportedOSPlatformVersion>8.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Relatorios\RelatorioProdutos.rdlc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Icons\Logo APP.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,7 +47,6 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Icons\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -52,6 +59,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -66,6 +78,10 @@
     <None Update="DataSets\ProdutosFiltro.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ProdutosFiltro.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
 
