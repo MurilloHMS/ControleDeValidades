@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             groupBox3 = new GroupBox();
             Txb_QuantTotProd = new TextBox();
             label13 = new Label();
@@ -49,6 +49,8 @@
             groupBox2 = new GroupBox();
             Dgv_FiltroProdutos = new DataGridView();
             groupBox1 = new GroupBox();
+            Txb_NFe = new TextBox();
+            label10 = new Label();
             button2 = new Button();
             button1 = new Button();
             label12 = new Label();
@@ -58,8 +60,6 @@
             label9 = new Label();
             label8 = new Label();
             label14 = new Label();
-            Txb_NFe = new TextBox();
-            label10 = new Label();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Dgv_FiltroProdutos).BeginInit();
@@ -105,7 +105,7 @@
             label13.AutoSize = true;
             label13.Location = new Point(99, 34);
             label13.Name = "label13";
-            label13.Size = new Size(120, 15);
+            label13.Size = new Size(119, 15);
             label13.TabIndex = 14;
             label13.Text = "Quant Total Produtos";
             // 
@@ -217,7 +217,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(15, 34);
             label1.Name = "label1";
-            label1.Size = new Size(69, 15);
+            label1.Size = new Size(68, 15);
             label1.TabIndex = 0;
             label1.Text = "Quant Total";
             // 
@@ -239,14 +239,14 @@
             Dgv_FiltroProdutos.BackgroundColor = SystemColors.Control;
             Dgv_FiltroProdutos.BorderStyle = BorderStyle.None;
             Dgv_FiltroProdutos.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(21, 76, 121);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            Dgv_FiltroProdutos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(21, 76, 121);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            Dgv_FiltroProdutos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             Dgv_FiltroProdutos.ColumnHeadersHeight = 25;
             Dgv_FiltroProdutos.Dock = DockStyle.Fill;
             Dgv_FiltroProdutos.EnableHeadersVisualStyles = false;
@@ -276,6 +276,23 @@
             groupBox1.TabIndex = 4;
             groupBox1.TabStop = false;
             groupBox1.Text = "Filtros";
+            // 
+            // Txb_NFe
+            // 
+            Txb_NFe.Location = new Point(221, 48);
+            Txb_NFe.Name = "Txb_NFe";
+            Txb_NFe.Size = new Size(190, 23);
+            Txb_NFe.TabIndex = 13;
+            Txb_NFe.TextChanged += Txb_NFe_TextChanged;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(221, 30);
+            label10.Name = "label10";
+            label10.Size = new Size(28, 15);
+            label10.TabIndex = 12;
+            label10.Text = "NFe";
             // 
             // button2
             // 
@@ -362,25 +379,8 @@
             label14.Name = "label14";
             label14.Size = new Size(1124, 37);
             label14.TabIndex = 0;
-            label14.Text = "CONTROLE DE VALIDADE - ALIMENTOS ♥";
+            label14.Text = "CONTROLE DE VALIDADE ";
             label14.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // Txb_NFe
-            // 
-            Txb_NFe.Location = new Point(221, 48);
-            Txb_NFe.Name = "Txb_NFe";
-            Txb_NFe.Size = new Size(190, 23);
-            Txb_NFe.TabIndex = 13;
-            Txb_NFe.TextChanged += Txb_NFe_TextChanged;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(221, 30);
-            label10.Name = "label10";
-            label10.Size = new Size(28, 15);
-            label10.TabIndex = 12;
-            label10.Text = "NFe";
             // 
             // Frm_FiltroProdutos_UC
             // 

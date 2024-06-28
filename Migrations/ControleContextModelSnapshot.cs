@@ -37,7 +37,7 @@ namespace ControleDeValidades.Migrations
 
                     b.HasKey("Id_Usuario", "Id_Opcao");
 
-                    b.ToTable("menuAcessos");
+                    b.ToTable("menuAcessos", (string)null);
                 });
 
             modelBuilder.Entity("ControleDeValidades.Models.Opcoes", b =>
@@ -59,7 +59,7 @@ namespace ControleDeValidades.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Opcoes");
+                    b.ToTable("Opcoes", (string)null);
                 });
 
             modelBuilder.Entity("ControleDeValidades.Models.Produto", b =>
@@ -103,13 +103,13 @@ namespace ControleDeValidades.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime?>("PRODDATALT")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("DATETIME2");
 
                     b.Property<DateTime>("PRODDATCAD")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("DATETIME2");
 
                     b.Property<DateTime>("PRODDATVAL")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("DATETIME2");
 
                     b.Property<int>("PRONQUANT")
                         .HasMaxLength(10)
@@ -117,7 +117,7 @@ namespace ControleDeValidades.Migrations
 
                     b.HasKey("PRONID_PRO");
 
-                    b.ToTable("Produtos");
+                    b.ToTable("Produtos", (string)null);
                 });
 
             modelBuilder.Entity("ControleDeValidades.Models.Usuarios", b =>
@@ -145,7 +145,7 @@ namespace ControleDeValidades.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Usuarios");
+                    b.ToTable("Usuarios", (string)null);
                 });
 #pragma warning restore 612, 618
         }

@@ -36,7 +36,7 @@ namespace ControleDeValidades.Views.UC
             }
             catch (Exception Ex)
             {
-                MessageBox.Show(Ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Ex.Message, "Error error erro erro ", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
