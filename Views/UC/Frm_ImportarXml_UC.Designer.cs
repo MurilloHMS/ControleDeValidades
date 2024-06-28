@@ -47,10 +47,11 @@
             label1 = new Label();
             groupBox2 = new GroupBox();
             Dgv_DadosXML = new DataGridView();
-            Dgv_Check = new DataGridViewCheckBoxColumn();
-            CODINT = new DataGridViewTextBoxColumn();
             button2 = new Button();
             button3 = new Button();
+            Dgv_Check = new DataGridViewCheckBoxColumn();
+            CODINT = new DataGridViewTextBoxColumn();
+            Validades = new DataGridViewTextBoxColumn();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Dgv_DadosXML).BeginInit();
@@ -221,7 +222,7 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             Dgv_DadosXML.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             Dgv_DadosXML.ColumnHeadersHeight = 30;
-            Dgv_DadosXML.Columns.AddRange(new DataGridViewColumn[] { Dgv_Check, CODINT });
+            Dgv_DadosXML.Columns.AddRange(new DataGridViewColumn[] { Dgv_Check, CODINT, Validades });
             Dgv_DadosXML.Cursor = Cursors.IBeam;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = SystemColors.Window;
@@ -250,20 +251,6 @@
             Dgv_DadosXML.Size = new Size(1134, 437);
             Dgv_DadosXML.TabIndex = 0;
             // 
-            // Dgv_Check
-            // 
-            Dgv_Check.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            Dgv_Check.HeaderText = "Selecionar";
-            Dgv_Check.Name = "Dgv_Check";
-            Dgv_Check.Resizable = DataGridViewTriState.True;
-            Dgv_Check.SortMode = DataGridViewColumnSortMode.Automatic;
-            Dgv_Check.Width = 70;
-            // 
-            // CODINT
-            // 
-            CODINT.HeaderText = "Código Interno";
-            CODINT.Name = "CODINT";
-            // 
             // button2
             // 
             button2.Location = new Point(314, 637);
@@ -283,6 +270,25 @@
             button3.Text = "Importar Todos Os Produtos";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
+            // 
+            // Dgv_Check
+            // 
+            Dgv_Check.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            Dgv_Check.HeaderText = "Selecionar";
+            Dgv_Check.Name = "Dgv_Check";
+            Dgv_Check.Resizable = DataGridViewTriState.True;
+            Dgv_Check.SortMode = DataGridViewColumnSortMode.Automatic;
+            Dgv_Check.Width = 70;
+            // 
+            // CODINT
+            // 
+            CODINT.HeaderText = "Código Interno";
+            CODINT.Name = "CODINT";
+            // 
+            // Validades
+            // 
+            Validades.HeaderText = "Data de Validade";
+            Validades.Name = "Validades";
             // 
             // Frm_ImportarXml_UC
             // 
@@ -325,5 +331,6 @@
         private Label label2;
         private DataGridViewCheckBoxColumn Dgv_Check;
         private DataGridViewTextBoxColumn CODINT;
+        private DataGridViewTextBoxColumn Validades;
     }
 }

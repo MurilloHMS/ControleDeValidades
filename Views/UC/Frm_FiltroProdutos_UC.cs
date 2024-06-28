@@ -246,5 +246,30 @@ namespace ControleDeValidades.Views.UC
             _dados = dados;
         }
 
+        private int ColetaID()
+        {
+            DataGridViewRow selectedRow = Dgv_FiltroProdutos.SelectedRows[0];
+            int id = int.Parse(selectedRow.Cells["PRONID_PRO"].Value.ToString());
+            return id;
+        }
+
+        private void Dgv_FiltroProdutos_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Delete) 
+            {
+                
+                DialogResult msg = MessageBox.Show("Deseja Excluir o Item selecionado?", "Exclusão", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                               
+                int id = ColetaID();
+                
+                if (msg == DialogResult.Yes) 
+                {
+                    Produto produto = new Produto();
+                    var prod = produto.BuscarPorID(id);
+                    prod.Excluir();
+                    MessageBox.Show("Produto Excluido com sucesso!");
+                }
+            }
+        }
     }
 }

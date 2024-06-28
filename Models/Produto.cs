@@ -64,5 +64,25 @@ namespace ControleDeValidades.Models
             DAL<Produto> dAL = new DAL<Produto>();
             dAL.AdicionarRegistro(this);
         }
+
+        public void Alterar() 
+        {
+            DAL<Produto> dAL = new DAL<Produto>();
+            dAL.AtualizarRegistro(this);
+        }
+
+        public void Excluir()
+        {
+            DAL<Produto> dAL = new DAL<Produto>();
+            dAL.DeletaRegistro(this);
+        }
+
+        //Buscas e retornos
+
+        public Produto BuscarPorID(int id) 
+        {
+            DAL<Produto> dAL = new DAL<Produto>();
+            return dAL.ObterRegistroPor(c => c.PRONID_PRO.Equals(id));
+        }
     }
 }

@@ -256,6 +256,7 @@
             Dgv_FiltroProdutos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             Dgv_FiltroProdutos.Size = new Size(1092, 370);
             Dgv_FiltroProdutos.TabIndex = 0;
+            Dgv_FiltroProdutos.KeyDown += Dgv_FiltroProdutos_KeyDown;
             // 
             // groupBox1
             // 
@@ -327,7 +328,7 @@
             // 
             Cb_Vencimentos.DropDownStyle = ComboBoxStyle.DropDownList;
             Cb_Vencimentos.FormattingEnabled = true;
-            Cb_Vencimentos.Items.AddRange(new object[] { "Vencimento em até 30 Dias", "Vencimento em até 20 Dias", "Vencimento em até 15 Dias", "Vencimento em até 10 Dias", "Vencimento em até 7 Dias", "Vencimento em até 3 Dias", "Vencidos", "Todos" });
+            Cb_Vencimentos.Items.AddRange(new object[] { "Vencimento em até 30 Dias", "Vencimento em até 20 Dias", "Vencimento em até 15 Dias", "Vencimento em até 10 Dias", "Vencimento em até 7 Dias", "Vencimento em até 3 Dias", "Vencidos", "Vendidos", "Todos" });
             Cb_Vencimentos.Location = new Point(637, 48);
             Cb_Vencimentos.Name = "Cb_Vencimentos";
             Cb_Vencimentos.Size = new Size(184, 23);

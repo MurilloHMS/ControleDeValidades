@@ -1,5 +1,6 @@
 ﻿using ControleDeValidades.Models;
 using System;
+using System.Globalization;
 using System.Runtime.CompilerServices;
 using System.Windows.Forms;
 
@@ -10,8 +11,8 @@ namespace ControleDeValidades.Views.UC
         public Frm_ImportarXml_UC()
         {
             InitializeComponent();
-
-            AdicionarColunaDateTimePicker();
+            Dgv_DadosXML.EditingControlShowing += Dgv_DadosXML_EditingControlShowing;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -111,14 +112,6 @@ namespace ControleDeValidades.Views.UC
             }
         }
 
-        private void AdicionarColunaDateTimePicker()
-        {
-            var datePickerColumn = new DataGridViewColumn(new DataGridViewDateTimePickerCell());
-            datePickerColumn.HeaderText = "Validades";
-            datePickerColumn.Name = "Validades";
-            Dgv_DadosXML.Columns.Add(datePickerColumn);
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             foreach(DataGridViewRow row in Dgv_DadosXML.Rows)
@@ -132,130 +125,65 @@ namespace ControleDeValidades.Views.UC
             AdicionarDadosAoBanco();
 
         }
-    }
 
-    public class DataGridViewDateTimePickerCell : DataGridViewTextBoxCell
-    {
-        public DataGridViewDateTimePickerCell()
+        private void Dgv_DadosXML_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
-            this.Style.Format = "dd/MM/yyyy";
-        }
-
-        public override void InitializeEditingControl(int rowIndex, object initialFormattedValue, DataGridViewCellStyle dataGridViewCellStyle)
-        {
-            base.InitializeEditingControl(rowIndex, initialFormattedValue, dataGridViewCellStyle);
-
-            var picker = DataGridView.EditingControl as DateTimePicker;
-
-            if (picker != null)
+            if (Dgv_DadosXML.CurrentCell.ColumnIndex == Dgv_DadosXML.Columns["Validades"].Index)
             {
-                picker.Format = DateTimePickerFormat.Custom;
-                picker.CustomFormat = "dd/MM/yyyy";
-            }
-        }
-
-        public override Type EditType => typeof(DataGridViewDateTimePickerEditingControl);
-
-        public override object DefaultNewRowValue => DateTime.Now.Date;
-
-        public override object Clone()
-        {
-            var cell = base.Clone() as DataGridViewDateTimePickerCell;
-            return cell;
-        }
-    }
-
-    public class DataGridViewDateTimePickerEditingControl : DateTimePicker, IDataGridViewEditingControl
-    {
-        public DataGridViewDateTimePickerEditingControl()
-        {
-            this.Format = DateTimePickerFormat.Custom;
-            this.CustomFormat = "dd/MM/yyyy";
-        }
-
-        private DataGridView dataGridView;
-        private bool valueChanged = false;
-        private int rowIndex;
-        public void ApplyCellStyleToEditingControl(DataGridViewCellStyle dataGridViewCellStyle)
-        {
-            this.Font = dataGridViewCellStyle.Font;
-            this.CalendarForeColor = dataGridViewCellStyle.ForeColor;
-            this.CalendarMonthBackground = dataGridViewCellStyle.BackColor;
-        }
-
-        public DataGridView EditingControlDataGridView
-        {
-            get { return dataGridView; }
-            set { dataGridView = value; }
-        }
-
-        public object EditingControlFormattedValue
-        {
-            get { return this.Value.ToShortDateString(); }
-            set
-            {
-                if (value is string)
+                TextBox tb = e.Control as TextBox;
+                if (tb != null)
                 {
-                    this.Value = DateTime.Parse((string)value);
+                    tb.KeyPress -= TextBox_KeyPress;
+                    tb.KeyPress += TextBox_KeyPress;
+                    tb.TextChanged -= TextBox_TextChanged;
+                    tb.TextChanged += TextBox_TextChanged;
+                    tb.Leave -= TextBox_Leave;
+                    tb.Leave += TextBox_Leave;
                 }
             }
         }
 
-        public int EditingControlRowIndex
+        private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            get { return rowIndex; }
-            set { rowIndex = value; }
-        }
-
-        public bool EditingControlValueChanged
-        {
-            get { return valueChanged; }
-            set { valueChanged = value; }
-        }
-
-        public bool EditingControlWantsInputKey(Keys keyData, bool dataGridViewWantsInputKey)
-        {
-            switch (keyData & Keys.KeyCode)
+            // Permitir apenas dígitos e caracteres de controle (backspace)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
-                case Keys.Left:
-                case Keys.Up:
-                case Keys.Down:
-                case Keys.Right:
-                case Keys.Home:
-                case Keys.End:
-                case Keys.PageDown:
-                case Keys.PageUp:
-                    return true;
-                default:
-                    return !dataGridViewWantsInputKey;
+                e.Handled = true;
             }
         }
 
-        public Cursor EditingPanelCursor
+        private void TextBox_TextChanged(object sender, EventArgs e)
         {
-            get { return base.Cursor; }
+            TextBox tb = sender as TextBox;
+            if (tb != null)
+            {
+                string text = tb.Text.Replace("/", "");
+                if (text.Length > 2) text = text.Insert(2, "/");
+                if (text.Length > 5) text = text.Insert(5, "/");
+
+                tb.TextChanged -= TextBox_TextChanged; // Evitar loop infinito
+                tb.Text = text;
+                tb.SelectionStart = tb.Text.Length; // Mover o cursor para o fim
+                tb.TextChanged += TextBox_TextChanged;
+            }
         }
 
-        public object GetEditingControlFormattedValue(DataGridViewDataErrorContexts context)
+        private void TextBox_Leave(object sender, EventArgs e)
         {
-            return EditingControlFormattedValue;
-        }
-
-        public void PrepareEditingControlForEdit(bool selectAll)
-        {
-            
-        }
-
-        public bool RepositionEditingControlOnValueChange
-        {
-            get { return false; }
-        }
-
-        protected override void OnValueChanged(EventArgs eventargs)
-        {
-            valueChanged = true;
-            this.EditingControlDataGridView.NotifyCurrentCellDirty(true);
-            base.OnValueChanged(eventargs);
+            TextBox tb = sender as TextBox;
+            if (tb != null)
+            {
+                DateTime parsedDate;
+                if (DateTime.TryParseExact(tb.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out parsedDate))
+                {
+                    tb.Text = parsedDate.ToString("dd/MM/yyyy");
+                }
+                else
+                {
+                    MessageBox.Show("Data inválida. Por favor, insira a data no formato dd/MM/yyyy.");
+                    tb.Focus();
+                }
+            }
         }
     }
 }
