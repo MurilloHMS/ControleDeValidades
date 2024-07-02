@@ -45,6 +45,7 @@ D:\Projetos\Profissionais\primulla\ControleDeValidades\bin\Release\net8.0-window
 D:\Projetos\Profissionais\primulla\ControleDeValidades\obj\Release\net8.0-windows8.0\ControleDeValidades.csproj.AssemblyReference.cache
 D:\Projetos\Profissionais\primulla\ControleDeValidades\obj\Release\net8.0-windows8.0\ControleDeValidades.Properties.Resources.resources
 D:\Projetos\Profissionais\primulla\ControleDeValidades\obj\Release\net8.0-windows8.0\ControleDeValidades.Views.Frm_AcessosUsuarios.resources
+D:\Projetos\Profissionais\primulla\ControleDeValidades\obj\Release\net8.0-windows8.0\ControleDeValidades.Views.Frm_AlteraProduto.resources
 D:\Projetos\Profissionais\primulla\ControleDeValidades\obj\Release\net8.0-windows8.0\ControleDeValidades.Views.Frm_Busca.resources
 D:\Projetos\Profissionais\primulla\ControleDeValidades\obj\Release\net8.0-windows8.0\ControleDeValidades.Views.Frm_CadastroUsuarios.resources
 D:\Projetos\Profissionais\primulla\ControleDeValidades\obj\Release\net8.0-windows8.0\ControleDeValidades.Views.Frm_DefaultWindows.resources

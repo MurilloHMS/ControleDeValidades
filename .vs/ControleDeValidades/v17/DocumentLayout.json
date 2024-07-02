@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\frm_alteraproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_alteraproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\uc\\frm_filtroprodutos_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_filtroprodutos_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\frm_alteraproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\frm_alteraproduto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\uc\\frm_filtroprodutos_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_filtroprodutos_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\uc\\frm_cadastrodeproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_cadastrodeproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|d:\\projetos\\profissionais\\primulla\\controledevalidades\\views\\uc\\frm_cadastrodeproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6552A9E-4359-4CA6-A0B7-D8CB5F985A8A}|ControleDeValidades.csproj|solutionrelative:views\\uc\\frm_cadastrodeproduto_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 420,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,40 +38,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "Models\\Produto.cs",
-              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Models\\Produto.cs",
-              "RelativeToolTip": "Models\\Produto.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAADgv1QAAAATAAAA",
+              "DocumentIndex": 0,
+              "Title": "Frm_AlteraProduto.cs",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_AlteraProduto.cs",
+              "RelativeDocumentMoniker": "Views\\Frm_AlteraProduto.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_AlteraProduto.cs",
+              "RelativeToolTip": "Views\\Frm_AlteraProduto.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAtwDwAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T22:47:29.388Z",
+              "WhenOpened": "2024-07-02T02:37:13.281Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "Frm_CadastroDeProduto_UC.cs",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_CadastroDeProduto_UC.cs",
+              "RelativeDocumentMoniker": "Views\\UC\\Frm_CadastroDeProduto_UC.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_CadastroDeProduto_UC.cs",
+              "RelativeToolTip": "Views\\UC\\Frm_CadastroDeProduto_UC.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAIAwwBcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T02:58:05.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Frm_CadastroDeProduto_UC.cs [Design]",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_CadastroDeProduto_UC.cs",
+              "RelativeDocumentMoniker": "Views\\UC\\Frm_CadastroDeProduto_UC.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_CadastroDeProduto_UC.cs [Design]",
+              "RelativeToolTip": "Views\\UC\\Frm_CadastroDeProduto_UC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T02:58:03.028Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Frm_FiltroProdutos_UC.cs",
               "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_FiltroProdutos_UC.cs",
               "RelativeDocumentMoniker": "Views\\UC\\Frm_FiltroProdutos_UC.cs",
               "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_FiltroProdutos_UC.cs",
               "RelativeToolTip": "Views\\UC\\Frm_FiltroProdutos_UC.cs",
-              "ViewState": "AQIAAPAAAAAAAAAAAIA3wA0BAABFAAAA",
+              "ViewState": "AQIAAPYAAAAAAAAAAAAjwBEBAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T21:31:49.641Z",
+              "WhenOpened": "2024-07-02T02:40:56.385Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Frm_FiltroProdutos_UC.cs [Design]",
-              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_FiltroProdutos_UC.cs",
-              "RelativeDocumentMoniker": "Views\\UC\\Frm_FiltroProdutos_UC.cs",
-              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\UC\\Frm_FiltroProdutos_UC.cs [Design]",
-              "RelativeToolTip": "Views\\UC\\Frm_FiltroProdutos_UC.cs [Design]",
+              "Title": "Frm_AlteraProduto.cs [Design]",
+              "DocumentMoniker": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_AlteraProduto.cs",
+              "RelativeDocumentMoniker": "Views\\Frm_AlteraProduto.cs",
+              "ToolTip": "D:\\Projetos\\Profissionais\\primulla\\ControleDeValidades\\Views\\Frm_AlteraProduto.cs [Design]",
+              "RelativeToolTip": "Views\\Frm_AlteraProduto.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T21:31:05.396Z",
+              "WhenOpened": "2024-07-02T02:36:23.359Z",
               "EditorCaption": " [Design]"
             }
           ]

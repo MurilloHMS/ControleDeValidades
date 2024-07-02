@@ -41,11 +41,15 @@ namespace ControleDeValidades.Views.UC
                         Dgv_DadosXML.DataSource = dados;
 
                         Dgv_DadosXML.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                        Dgv_DadosXML.Columns[1].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         Dgv_DadosXML.Columns[2].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                        Dgv_DadosXML.Columns[2].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         Dgv_DadosXML.Columns[3].Visible = false;
                         Dgv_DadosXML.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                        Dgv_DadosXML.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         Dgv_DadosXML.Columns[5].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
                         Dgv_DadosXML.Columns[6].AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+                        Dgv_DadosXML.Columns[6].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                         Dgv_DadosXML.Columns[7].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
                         Dgv_DadosXML.Columns[8].Visible = false;
                         Dgv_DadosXML.Columns[9].Visible = false;
@@ -99,7 +103,7 @@ namespace ControleDeValidades.Views.UC
                         produto.PROCDESCR = row.Cells["Descrição"].Value.ToString();
                         produto.PRONQUANT = int.Parse(row.Cells["Quantidade"].Value.ToString());
                         produto.PROCFOR = row.Cells["Fornecedor"].Value.ToString();
-                        produto.PRODDATVAL = Convert.ToDateTime(row.Cells["Validades"].Value.ToString());
+                        produto.PRODDATVAL = DateTime.ParseExact(row.Cells["Validades"].Value.ToString(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
                         produto.PRODDATCAD = Dtp_DataEntrada.Value;
                         produto.PROCCODINT = row.Cells["CODINT"].Value?.ToString() ?? string.Empty;
                         produto.PROCNNUMNF = Txb_NumNfe.Text;
@@ -141,47 +145,66 @@ namespace ControleDeValidades.Views.UC
                     tb.Leave += TextBox_Leave;
                 }
             }
+            else
+            {
+                TextBox tb = e.Control as TextBox;
+                if (tb != null)
+                {
+                    tb.KeyPress -= TextBox_KeyPress;
+                    tb.TextChanged -= TextBox_TextChanged;
+                    tb.Leave -= TextBox_Leave;
+                }
+            }
         }
 
         private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Permitir apenas dígitos e caracteres de controle (backspace)
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            // Permitir apenas dígitos e caracteres de controle (backspace) para coluna Validades
+            if (Dgv_DadosXML.CurrentCell.ColumnIndex == Dgv_DadosXML.Columns["Validades"].Index)
             {
-                e.Handled = true;
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                {
+                    e.Handled = true;
+                }
             }
         }
 
         private void TextBox_TextChanged(object sender, EventArgs e)
         {
-            TextBox tb = sender as TextBox;
-            if (tb != null)
+            if (Dgv_DadosXML.CurrentCell.ColumnIndex == Dgv_DadosXML.Columns["Validades"].Index)
             {
-                string text = tb.Text.Replace("/", "");
-                if (text.Length > 2) text = text.Insert(2, "/");
-                if (text.Length > 5) text = text.Insert(5, "/");
+                TextBox tb = sender as TextBox;
+                if (tb != null)
+                {
+                    string text = tb.Text.Replace("/", "");
+                    if (text.Length > 2) text = text.Insert(2, "/");
+                    if (text.Length > 5) text = text.Insert(5, "/");
 
-                tb.TextChanged -= TextBox_TextChanged; // Evitar loop infinito
-                tb.Text = text;
-                tb.SelectionStart = tb.Text.Length; // Mover o cursor para o fim
-                tb.TextChanged += TextBox_TextChanged;
+                    tb.TextChanged -= TextBox_TextChanged; // Evitar loop infinito
+                    tb.Text = text;
+                    tb.SelectionStart = tb.Text.Length; // Mover o cursor para o fim
+                    tb.TextChanged += TextBox_TextChanged;
+                }
             }
         }
 
         private void TextBox_Leave(object sender, EventArgs e)
         {
-            TextBox tb = sender as TextBox;
-            if (tb != null)
+            if (Dgv_DadosXML.CurrentCell.ColumnIndex == Dgv_DadosXML.Columns["Validades"].Index)
             {
-                DateTime parsedDate;
-                if (DateTime.TryParseExact(tb.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out parsedDate))
+                TextBox tb = sender as TextBox;
+                if (tb != null)
                 {
-                    tb.Text = parsedDate.ToString("dd/MM/yyyy");
-                }
-                else
-                {
-                    MessageBox.Show("Data inválida. Por favor, insira a data no formato dd/MM/yyyy.");
-                    tb.Focus();
+                    DateTime parsedDate;
+                    if (DateTime.TryParseExact(tb.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out parsedDate))
+                    {
+                        tb.Text = parsedDate.ToString("dd/MM/yyyy");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Data inválida. Por favor, insira a data no formato dd/MM/yyyy.");
+                        tb.Focus();
+                    }
                 }
             }
         }

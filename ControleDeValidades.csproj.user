@@ -7,6 +7,9 @@
     <Compile Update="Views\Frm_AcessosUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\Frm_AlteraProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\Frm_CadastroUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>

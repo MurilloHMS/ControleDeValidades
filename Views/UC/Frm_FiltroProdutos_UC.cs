@@ -270,6 +270,13 @@ namespace ControleDeValidades.Views.UC
                     MessageBox.Show("Produto Excluido com sucesso!");
                 }
             }
+
+            if(e.KeyCode == Keys.F2 || e.KeyCode == Keys.Enter) 
+            {
+                Frm_AlteraProduto frm = new Frm_AlteraProduto();
+                frm.IdProduto = ColetaID();
+                frm.ShowDialog();
+            }
         }
     }
 }
